@@ -6,25 +6,13 @@ from sklearn.metrics import mean_absolute_error
 def main():
     model = load_model('models/house_price_model.pkl')
 
-    df = load_data('data/raw/house_prices.csv')
-    df = preprocess_data(df)
-    x_train, x_test, y_train, y_test = split_data(df)
-    x_train_scaled, x_test_scaled, _ = scale_data(x_train, x_test)
+    home_data = load_data('data/raw/iowa_house_prices.csv')
+    home_data = preprocess_data(home_data)
+    train_X, val_X, train_y, val_y = split_data(home_data)
+    # train_X_scaled, val_X_scaled, _ = scale_data(train_X, val_X)
 
-    y_pred = model.predict(x_test_scaled)
-
-    mse = evaluate_model(model, x_test_scaled, y_test)
-    mae = mean_absolute_error(y_test, y_pred)
-
-    print("\n### Resultados da Avaliação ###")
-    print(f"- Erro Quadrático Médio (MSE): {mse}")
-    print(f"- Erro Absoluto Médio (MAE): {mae}")
-
-    results_df = pd.DataFrame({'Preço Real': y_test.values, 'Preço Previsto': y_pred})
-    results_df['Diferença'] = results_df['Preço Previsto'] - results_df['Preço Real']
-
-    print("\n### Amostra de Previsões ###")
-    print(results_df.head(10).round(2))
+    mae = evaluate_model(model, val_X, val_y)
+    print(f"Mean Absolute Error in Test: {mae}")
 
 if __name__ == '__main__':
     main()

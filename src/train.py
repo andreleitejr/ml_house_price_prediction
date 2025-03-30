@@ -2,18 +2,17 @@ from src.data_preprocessing import load_data, preprocess_data, split_data, scale
 from src.model import train_model, evaluate_model, save_model
 
 def main():
-    df = load_data('data/raw/house_prices.csv')
+    home_data = load_data('data/raw/iowa_house_prices.csv')
 
-    df = preprocess_data(df)
+    home_data = preprocess_data(home_data)
 
-    x_train, x_test, y_train, y_test = split_data(df)
+    train_X, val_X, train_y, val_y = split_data(home_data)
 
-    x_train_scaled, x_test_scaled, scaler = scale_data(x_train, x_test)
+    # x_train_scaled, x_test_scaled, scaler = scale_data(x_train, x_test)
 
-    model = train_model(x_train_scaled, y_train)
-
-    mse = evaluate_model(model, x_test_scaled, y_test)
-    print(f'Mean Squared Error: {mse}')
+    model = train_model(train_X, train_y)
+    mae = evaluate_model(model, val_X, val_y)
+    print(f'Mean Absolute Error: {mae}')
 
     save_model(model, 'models/house_price_model.pkl')
 
