@@ -8,22 +8,29 @@ def load_data(file_path: str) -> pd.DataFrame:
     return pd.read_csv(file_path)
 
 
-def preprocess_data(home_data: pd.DataFrame) -> pd.DataFrame:
+def preprocess_data(data: pd.DataFrame) -> pd.DataFrame:
     """Drop unnecessary columns, handle missing numerical columns by filling with the median, and convert categorical features to numeric."""
-    # home_data = home_data.dropna(subset=['price'])
-    # home_data = home_data.fillna(home_data.median())
+    # data = data.dropna(subset=['price'])
+    # data = data.fillna(data.median())
     #
-    # home_data = pd.get_dummies(home_data, drop_first=True)
+    # data = pd.get_dummies(data, drop_first=True)
 
-    return home_data
+    return data
 
+def get_y(data: pd.DataFrame):
+    return data.SalePrice
 
-def split_data(home_data: pd.DataFrame, test_size: float = 0.4):
+def get_X(data: pd.DataFrame):
+    features =  ['LotArea', 'YearBuilt', '1stFlrSF', '2ndFlrSF', 'FullBath', 'BedroomAbvGr', 'TotRmsAbvGrd']
+    return data[features]
+
+def get_X_y(data: pd.DataFrame):
+    return get_X(data), get_y(data)
+
+def split_data(data: pd.DataFrame):
     """Split the data into training and testing datasets."""
-    y = home_data.SalePrice
-    feature_columns = ['LotArea', 'YearBuilt', '1stFlrSF', '2ndFlrSF', 'FullBath', 'BedroomAbvGr', 'TotRmsAbvGrd']
-    X = home_data[feature_columns]
-
+    y = get_y(data)
+    X = get_X(data)
     return train_test_split(X, y, random_state=0)
 
 

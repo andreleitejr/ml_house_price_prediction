@@ -1,17 +1,20 @@
-from sklearn.tree import DecisionTreeRegressor
+from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error
 import joblib
 
 def train_model(train_X, train_y):
     """Train a machine learning models."""
-    model = DecisionTreeRegressor(random_state=1)
+    model = RandomForestRegressor(random_state=1)
     model.fit(train_X, train_y)
 
     return model
 
+def get_prediction(model, val_X):
+    return model.predict(val_X)
+
 def evaluate_model(model, val_X, val_y):
-    """Evaluate the trained models using Mean Squared Error."""
-    predictions = model.predict(val_X)
+    """Evaluate the trained models using Mean Absolute Error."""
+    predictions = get_prediction(model, val_X)
 
     return mean_absolute_error(val_y, predictions)
 
