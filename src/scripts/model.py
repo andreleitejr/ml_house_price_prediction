@@ -5,22 +5,22 @@ import joblib
 def train_model(train_X, train_y):
     """Train a machine learning models."""
 
-    model = RandomForestRegressor(random_state=1)
+    model = RandomForestRegressor(n_estimators=10, random_state=0)
     model.fit(train_X, train_y)
 
     return model
 
-def get_prediction(model, val_X):
+def get_prediction(model, X_valid):
     """Use the trained model to make predictions on the given dataset."""
 
-    return model.predict(val_X)
+    return model.predict(X_valid)
 
-def evaluate_model(model, val_X, val_y):
+def evaluate_model(model, X_valid, y_valid):
     """Evaluate the trained models using Mean Absolute Error."""
 
-    predictions = get_prediction(model, val_X)
+    predictions = get_prediction(model, X_valid)
 
-    return mean_absolute_error(val_y, predictions)
+    return mean_absolute_error(y_valid, predictions)
 
 def save_model(model, model_path: str):
     """Save the trained models to a file."""
