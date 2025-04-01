@@ -19,22 +19,15 @@ def train_model(X_train, y_train):
 
 def xgboost_train_model(X_train, X_valid, y_train, y_valid):
     """Train a machine learning models."""
-    model = XGBRegressor(n_estimators=500, learning_rate=0.5, n_jobs=4, early_stopping_rounds=5)
+    model = XGBRegressor(n_estimators=1000, learning_rate=0.05, n_jobs=4, early_stopping_rounds=10)
 
-    model.fit(X_train, y_train,
-             eval_set=[(X_valid, y_valid)],
-             verbose=False)
+    model.fit(X_train, y_train, eval_set=[(X_valid, y_valid)], verbose=False)
 
     return model
 
 
-def preprocessor_train_model(X_train, y_train):
+def preprocessor_train_model(X_train, y_train, categorical_cols, numerical_cols):
     """Train a machine learning model using preprocessor (ColumnTransformer)."""
-
-    categorical_cols = [cname for cname in X_train.columns if
-                        X_train[cname].nunique() < 10 and X_train[cname].dtype == "object"]
-
-    numerical_cols = [cname for cname in X_train.columns if X_train[cname].dtype in ['int64', 'float64']]
 
     cols = categorical_cols + numerical_cols
     X_train = X_train[cols].copy()

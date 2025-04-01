@@ -22,8 +22,10 @@ def preprocess_data(data: pd.DataFrame) -> pd.DataFrame:
 
 def split_data(data: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, pd.Series, pd.Series]:
     """Split the dataset into training and validation sets after preprocessing."""
-    X = get_features(data)
+    X = data
+    X.dropna(axis=0, subset=['SalePrice'], inplace=True)
     y = data.SalePrice
+    X.drop(['SalePrice'], axis=1, inplace=True)
 
     return train_test_split(X, y, train_size=0.8, test_size=0.2, random_state=0)
 
@@ -121,6 +123,11 @@ def get_features_and_target(data: pd.DataFrame) -> tuple[pd.DataFrame, pd.Series
 
     return get_features(data), get_target(data)
 
+def get_numeric_cols(data):
+    return [cname for cname in data.columns if data[cname].dtype in ['int64', 'float64']]
+
+def get_categorical_cols(data):
+    return [cname for cname in data.columns if data[cname].nunique() < 10 and data[cname].dtype == "object"]
 
 def export_data(data: dict, filepath: str) -> None:
     """Save a dictionary as a CSV file."""
