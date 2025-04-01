@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.impute import SimpleImputer
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import OrdinalEncoder
+from sklearn.preprocessing import OrdinalEncoder, OneHotEncoder
 
 
 def load_data(file_path: str) -> pd.DataFrame:
@@ -39,9 +39,13 @@ def reduce_data(X_train, X_valid):
 
 
 def impute_data(X_train, X_valid):
-    imputer = SimpleImputer()
-    imputed_X_train = pd.DataFrame(imputer.fit_transform(X_train), columns=X_train.columns)
-    imputed_X_valid = pd.DataFrame(imputer.transform(X_valid), columns=X_valid.columns)
+    numeric_cols = X_train.select_dtypes(include=['number']).columns
+
+    imputer = SimpleImputer(strategy="mean")
+
+    imputed_X_train = pd.DataFrame(imputer.fit_transform(X_train[numeric_cols]), columns=numeric_cols)
+    imputed_X_valid = pd.DataFrame(imputer.transform(X_valid[numeric_cols]), columns=numeric_cols)
+
     return imputed_X_train, imputed_X_valid
 
 
@@ -79,6 +83,27 @@ def ordinal_encode_data(X_train, X_valid):
 
     return label_X_train, label_X_valid
 
+def one_hot_encode_data(X_train, X_valid):
+    s = (X_train.dtypes == 'object')
+    object_cols = list(s[s].index)
+
+    OH_encoder = OneHotEncoder(handle_unknown='ignore', sparse_output=False)
+    OH_cols_train = pd.DataFrame(OH_encoder.fit_transform(X_train[object_cols]))
+    OH_cols_valid = pd.DataFrame(OH_encoder.transform(X_valid[object_cols]))
+
+    OH_cols_train.index = X_train.index
+    OH_cols_valid.index = X_valid.index
+
+    num_X_train = X_train.drop(object_cols, axis=1)
+    num_X_valid = X_valid.drop(object_cols, axis=1)
+
+    OH_X_train = pd.concat([num_X_train, OH_cols_train], axis=1)
+    OH_X_valid = pd.concat([num_X_valid, OH_cols_valid], axis=1)
+
+    OH_X_train.columns = OH_X_train.columns.astype(str)
+    OH_X_valid.columns = OH_X_valid.columns.astype(str)
+
+    return OH_X_train, OH_X_valid
 
 def get_target(data: pd.DataFrame) -> pd.Series:
     """Extract the target variable (SalePrice) from the dataset."""

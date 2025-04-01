@@ -5,7 +5,7 @@ import joblib
 def train_model(train_X, train_y):
     """Train a machine learning models."""
 
-    model = RandomForestRegressor(n_estimators=10, random_state=0)
+    model = RandomForestRegressor(n_estimators=100, random_state=0)
     model.fit(train_X, train_y)
 
     return model
