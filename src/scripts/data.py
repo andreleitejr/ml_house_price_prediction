@@ -21,16 +21,16 @@ def preprocess_data(data: pd.DataFrame) -> pd.DataFrame:
 
 def split_data(data: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, pd.Series, pd.Series]:
     """Split the dataset into training and validation sets after preprocessing."""
+    data.dropna(axis=0, subset=['SalePrice'], inplace=True)
+    y = data.SalePrice
+    data.drop(['SalePrice'], axis=1, inplace=True)
 
-    data = data.dropna(subset=['SalePrice'])
+    # Break off validation set from training data
+    X_train_full, X_valid_full, y_train, y_valid = train_test_split(data, y,
+                                                                    train_size=0.8, test_size=0.2,
+                                                                    random_state=0)
 
-    y = data['SalePrice']
-    X = data.drop(columns=['SalePrice'])
-
-    cols_with_missing = [col for col in X.columns if X[col].isnull().any()]
-    X = X.drop(columns=cols_with_missing)
-
-    return train_test_split(X, y, train_size=0.8, test_size=0.2, random_state=0)
+    return X_train_full, X_valid_full, y_train, y_valid
 
 
 def reduce_data(X_train, X_valid):
@@ -83,6 +83,7 @@ def ordinal_encode_data(X_train, X_valid):
 
     return label_X_train, label_X_valid
 
+
 def one_hot_encode_data(X_train, X_valid):
     s = (X_train.dtypes == 'object')
     object_cols = list(s[s].index)
@@ -104,6 +105,7 @@ def one_hot_encode_data(X_train, X_valid):
     OH_X_valid.columns = OH_X_valid.columns.astype(str)
 
     return OH_X_train, OH_X_valid
+
 
 def get_target(data: pd.DataFrame) -> pd.Series:
     """Extract the target variable (SalePrice) from the dataset."""

@@ -13,6 +13,7 @@ def main():
     test_data = preprocess_data(test_data)
     X_test = get_features(test_data)
 
+    # TODO: Change this
     predictions = get_prediction(full_model, X_test)
     mae = evaluate_model(full_model, X, y)
     print(f'Mean Absolute Error: {mae}')
