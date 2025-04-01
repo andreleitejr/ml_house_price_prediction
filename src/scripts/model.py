@@ -6,6 +6,7 @@ from sklearn.model_selection import cross_val_score
 from sklearn.pipeline import Pipeline
 import joblib
 from sklearn.preprocessing import OneHotEncoder
+from xgboost import XGBRegressor
 
 
 def train_model(X_train, y_train):
@@ -13,6 +14,16 @@ def train_model(X_train, y_train):
 
     model = RandomForestRegressor(n_estimators=100, random_state=0)
     model.fit(X_train, y_train)
+
+    return model
+
+def xgboost_train_model(X_train, X_valid, y_train, y_valid):
+    """Train a machine learning models."""
+    model = XGBRegressor(n_estimators=500, learning_rate=0.5, n_jobs=4, early_stopping_rounds=5)
+
+    model.fit(X_train, y_train,
+             eval_set=[(X_valid, y_valid)],
+             verbose=False)
 
     return model
 

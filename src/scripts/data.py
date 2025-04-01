@@ -22,11 +22,10 @@ def preprocess_data(data: pd.DataFrame) -> pd.DataFrame:
 
 def split_data(data: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, pd.Series, pd.Series]:
     """Split the dataset into training and validation sets after preprocessing."""
-    data.dropna(axis=0, subset=['SalePrice'], inplace=True)
+    X = get_features(data)
     y = data.SalePrice
-    data.drop(['SalePrice'], axis=1, inplace=True)
 
-    return train_test_split(data, y, train_size=0.8, test_size=0.2, random_state=0)
+    return train_test_split(X, y, train_size=0.8, test_size=0.2, random_state=0)
 
 
 def reduce_data(X_train, X_valid):
