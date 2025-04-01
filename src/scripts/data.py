@@ -13,8 +13,9 @@ def load_data(file_path: str) -> pd.DataFrame:
 def preprocess_data(data: pd.DataFrame) -> pd.DataFrame:
     """Handle missing numerical columns by filling with the median."""
 
-    numeric_cols = data.select_dtypes(include=['number']).columns
-    data[numeric_cols] = data[numeric_cols].fillna(data[numeric_cols].median())
+    data.dropna(axis=0, subset=['SalePrice'], inplace=True)
+
+    data.drop(['SalePrice'], axis=1, inplace=True)
 
     return data
 
@@ -25,12 +26,7 @@ def split_data(data: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, pd.Serie
     y = data.SalePrice
     data.drop(['SalePrice'], axis=1, inplace=True)
 
-    # Break off validation set from training data
-    X_train_full, X_valid_full, y_train, y_valid = train_test_split(data, y,
-                                                                    train_size=0.8, test_size=0.2,
-                                                                    random_state=0)
-
-    return X_train_full, X_valid_full, y_train, y_valid
+    return train_test_split(data, y, train_size=0.8, test_size=0.2, random_state=0)
 
 
 def reduce_data(X_train, X_valid):

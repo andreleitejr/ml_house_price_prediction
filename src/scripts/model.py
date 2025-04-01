@@ -2,21 +2,40 @@ from sklearn.compose import ColumnTransformer
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.impute import SimpleImputer
 from sklearn.metrics import mean_absolute_error
+from sklearn.model_selection import cross_val_score
 from sklearn.pipeline import Pipeline
 import joblib
 from sklearn.preprocessing import OneHotEncoder
 
 
-def train_model(X_train, y_train, preprocessor):
+def train_model(X_train, y_train):
     """Train a machine learning models."""
 
     model = RandomForestRegressor(n_estimators=100, random_state=0)
+    model.fit(X_train, y_train)
 
-    clf = Pipeline(steps=[('preprocessor', preprocessor),('model', model)])
+    return model
+
+
+def preprocessor_train_model(X_train, y_train):
+    """Train a machine learning model using preprocessor (ColumnTransformer)."""
+
+    categorical_cols = [cname for cname in X_train.columns if
+                        X_train[cname].nunique() < 10 and X_train[cname].dtype == "object"]
+
+    numerical_cols = [cname for cname in X_train.columns if X_train[cname].dtype in ['int64', 'float64']]
+
+    cols = categorical_cols + numerical_cols
+    X_train = X_train[cols].copy()
+
+    model = RandomForestRegressor(n_estimators=100, random_state=0)
+    preprocessor = get_preprocessor(categorical_cols, numerical_cols)
+    clf = Pipeline(steps=[('preprocessor', preprocessor), ('model', model)])
 
     clf.fit(X_train, y_train)
 
     return clf
+
 
 # TODO: Remove this
 def get_prediction(model, X_valid):
@@ -33,8 +52,17 @@ def evaluate_model(model, X_valid, y_valid):
     return mean_absolute_error(y_valid, predictions)
 
 
-def pipeline_model(categorical_cols, numerical_cols):
+def cross_validate_model(X, y, n_estimators):
+    pipeline = Pipeline(steps=[
+        ('preprocessor', SimpleImputer()),
+        ('model', RandomForestRegressor(n_estimators, random_state=0)),
+    ])
 
+    scores = -1 * cross_val_score(pipeline, X, y, cv=3, scoring='neg_mean_absolute_error')
+    return scores.mean()
+
+
+def get_preprocessor(categorical_cols, numerical_cols):
     numerical_transformer = SimpleImputer(strategy='constant')
 
     categorical_transformer = Pipeline(steps=[
