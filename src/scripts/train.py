@@ -4,7 +4,9 @@ from src.scripts.model import train_model, evaluate_model, save_model, cross_val
 
 
 def train():
-    """Executes the full pipeline: data loading, preprocessing, training, evaluation, cross-validating and model saving."""
+    """Executes the full pipeline: loads data, applies feature engineering,
+    splits into train/validation, preprocesses features, trains the model,
+    evaluates performance, performs cross-validation, and saves the trained model."""
     data = load_data(TRAIN_DATA_PATH)
     data = feature_engineering(data)
 

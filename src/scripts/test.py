@@ -5,7 +5,8 @@ from src.scripts.model import load_model
 
 
 def test():
-    """Loads a trained model, preprocesses test data, makes predictions, and saves the results."""
+    """Loads a trained model and preprocessor, applies feature engineering to test data,
+    transforms features, makes predictions, and saves the results to a CSV file."""
     test_data = pd.read_csv(TEST_DATA_PATH, index_col="Id")
     test_data = feature_engineering(test_data)
 

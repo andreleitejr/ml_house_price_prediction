@@ -8,8 +8,8 @@ from xgboost import XGBRegressor
 def train_model(X_train, X_valid, y_train, y_valid) -> XGBRegressor:
     """Trains an XGBoost regressor with early stopping and predefined hyperparameters."""
     params = {
-        "n_estimators": 1000,
-        "learning_rate": 0.1,
+        "n_estimators": 500,
+        "learning_rate": 0.05,
         "max_depth": 5,
         "subsample": 0.6,
         "colsample_bytree": 0.6,
