@@ -1,4 +1,4 @@
-from src.config import TRAIN_DATA_PATH, MODEL_PATH
+from src.config import TRAIN_DATA_PATH, MODEL_PATH, PREPROCESSOR_PATH
 from src.scripts.data import load_data, split_data, preprocess_data, feature_engineering
 from src.scripts.model import train_model, evaluate_model, save_model, cross_validate_model
 
@@ -11,7 +11,7 @@ def train():
     data = feature_engineering(data)
 
     X_train, X_valid, y_train, y_valid = split_data(data)
-    X_train, X_valid = preprocess_data(X_train, X_valid)
+    X_train, X_valid = preprocess_data(X_train, X_valid, PREPROCESSOR_PATH)
 
     model = train_model(X_train, X_valid, y_train, y_valid)
     evaluate_model(model, X_valid, y_valid)

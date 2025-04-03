@@ -34,7 +34,8 @@ def split_data(data: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, pd.Serie
     return train_test_split(X, y, train_size=0.8, test_size=0.2, random_state=42)
 
 
-def preprocess_data(X_train: pd.DataFrame, X_valid: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
+def preprocess_data(X_train: pd.DataFrame, X_valid: pd.DataFrame, preprocessor_path: str) -> tuple[
+    pd.DataFrame, pd.DataFrame]:
     """Applies numerical imputation, categorical encoding, and saves the preprocessing pipeline."""
     num_cols = X_train.select_dtypes(include=["int64", "float64"]).columns.tolist()
     cat_cols = X_train.select_dtypes(include=["object"]).columns.tolist()
@@ -56,7 +57,7 @@ def preprocess_data(X_train: pd.DataFrame, X_valid: pd.DataFrame) -> tuple[pd.Da
     X_train = preprocessor.fit_transform(X_train)
     X_valid = preprocessor.transform(X_valid)
 
-    joblib.dump(preprocessor, "src/models/preprocessor.pkl")
+    joblib.dump(preprocessor, preprocessor_path)
 
     return X_train, X_valid
 
