@@ -13,7 +13,7 @@ def load_data(file_path: str) -> pd.DataFrame:
 
 
 def feature_engineering(data: pd.DataFrame) -> pd.DataFrame:
-    """Creates 'TotalSF' (total square footage) and 'HouseAge' (years since built)."""
+    """Applies feature engineering transformations to enhance the dataset with additional relevant features."""
     data["TotalSF"] = data["TotalBsmtSF"] + data["1stFlrSF"] + data["2ndFlrSF"]
     data["HouseAge"] = data["YrSold"] - data["YearBuilt"]
 
