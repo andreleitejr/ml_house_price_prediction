@@ -8,7 +8,7 @@ from src.scripts.model import load_model
 def test():
     """Loads a trained model and preprocessor, applies feature engineering to test data,
     transforms features, makes predictions, and saves the results to a CSV file."""
-    logger.info("Starting test process...")
+    logger.info('Starting test process...')
 
     test_data = load_data(TEST_DATA_PATH)
     test_data = feature_engineering(test_data)
@@ -19,12 +19,12 @@ def test():
     model = load_model(MODEL_PATH)
     predictions = model.predict(test_data_transformed)
 
-    results = pd.DataFrame({"Id": test_data.index, "SalePrice": predictions})
+    results = pd.DataFrame({'Id': test_data.index, 'SalePrice': predictions})
     results.to_csv(PREDICTIONS_PATH, index=False)
 
-    logger.result(f"✅ Predictions saved successfully! 📂 File path: {PREDICTIONS_PATH}")
-    logger.info("Test process completed.")
+    logger.result(f'✅ Predictions saved successfully! 📂 File path: {PREDICTIONS_PATH}')
+    logger.info('Test process completed.')
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     test()

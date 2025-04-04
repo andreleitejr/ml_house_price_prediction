@@ -7,7 +7,7 @@ def train():
     """Executes the full pipeline: loads data, applies feature engineering,
     splits into train/validation, preprocesses features, trains the model,
     evaluates performance, performs cross-validation, and saves the trained model."""
-    logger.info("Training pipeline started...")
+    logger.info('Training pipeline started...')
 
     data = load_data(TRAIN_DATA_PATH)
     data = feature_engineering(data)
@@ -20,7 +20,7 @@ def train():
 
     save_model(model, MODEL_PATH)
 
-    logger.info("Training pipeline completed.")
+    logger.info('Training pipeline completed.')
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     train()
