@@ -7,15 +7,13 @@ def train():
     """Executes the full pipeline: loads data, applies feature engineering,
     splits into train/validation, preprocesses features, trains the model,
     evaluates performance, performs cross-validation, and saves the trained model."""
-    logger.info('Training pipeline started...')
-
     data = load_data(TRAIN_DATA_PATH)
     data = feature_engineering(data)
+
     X_train, X_valid, y_train, y_valid = split_data(data)
     X_train, X_valid = preprocess_data(X_train, X_valid, PREPROCESSOR_PATH)
 
     model = train_model(X_train, X_valid, y_train, y_valid)
-    evaluate_model(model, X_valid, y_valid)
     cross_validate_model(model, X_train, y_train)
 
     save_model(model, MODEL_PATH)

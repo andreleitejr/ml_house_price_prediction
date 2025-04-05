@@ -48,3 +48,2552 @@
 =================
 
 2025-04-04 10:09:57,263 [INFO] Test process completed.
+2025-04-04 10:13:19,254 [INFO] Training pipeline started...
+2025-04-04 10:13:19,255 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:13:19,271 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:13:19,271 [INFO] Applying feature engineering...
+2025-04-04 10:13:19,273 [INFO] Feature engineering applied successfully.
+2025-04-04 10:13:19,273 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:13:19,277 [INFO] Data split completed. Training size: (1168, 79), Validation size: (292, 79)
+2025-04-04 10:13:19,278 [INFO] Preprocessing data...
+2025-04-04 10:13:19,321 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:13:19,322 [INFO] Training the model...
+2025-04-04 10:13:20,031 [INFO] Model training completed.
+2025-04-04 10:13:20,031 [INFO] Evaluating model performance...
+2025-04-04 10:13:20,035 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 15102.29
+🔍 Accuracy (R² Score): 0.9144 (91%)
+
+=================
+
+2025-04-04 10:13:20,035 [INFO] Performing cross-validation...
+2025-04-04 10:13:25,187 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 15418.86 (± 963.86)
+🔍 Accuracy (R² Score - Cross Validation): 0.8787 (88%) (± 0.04)
+
+=================
+
+2025-04-04 10:13:25,187 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:13:25,202 [INFO] Model saved successfully.
+2025-04-04 10:13:25,202 [INFO] Training pipeline completed.
+2025-04-04 10:13:25,204 [INFO] Starting test process...
+2025-04-04 10:13:25,205 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\test\test_house_prices.csv...
+2025-04-04 10:13:25,224 [INFO] Data loaded successfully. Shape: (1459, 79)
+2025-04-04 10:13:25,224 [INFO] Applying feature engineering...
+2025-04-04 10:13:25,226 [INFO] Feature engineering applied successfully.
+2025-04-04 10:13:25,226 [INFO] Loading model from \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl...
+2025-04-04 10:13:25,239 [INFO] Model loaded successfully.
+2025-04-04 10:13:25,264 [INFO] Loading model from \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:13:25,389 [INFO] Model loaded successfully.
+2025-04-04 10:13:25,400 [RESULT] 
+
+===== RESULT =====
+✅ Predictions saved successfully! 📂 File path: \python_projects\machine_learning\house_price_prediction\src\results\predictions.csv
+=================
+
+2025-04-04 10:13:25,401 [INFO] Test process completed.
+2025-04-04 10:13:50,125 [INFO] Training pipeline started...
+2025-04-04 10:13:50,125 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:13:50,139 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:13:50,139 [INFO] Applying feature engineering...
+2025-04-04 10:13:50,142 [INFO] Feature engineering applied successfully.
+2025-04-04 10:13:50,143 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:13:50,147 [INFO] Data split completed. Training size: (1168, 83), Validation size: (292, 83)
+2025-04-04 10:13:50,148 [INFO] Preprocessing data...
+2025-04-04 10:13:50,190 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:13:50,190 [INFO] Training the model...
+2025-04-04 10:13:51,049 [INFO] Model training completed.
+2025-04-04 10:13:51,049 [INFO] Evaluating model performance...
+2025-04-04 10:13:51,054 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 14686.67
+🔍 Accuracy (R² Score): 0.9236 (92%)
+
+=================
+
+2025-04-04 10:13:51,055 [INFO] Performing cross-validation...
+2025-04-04 10:13:58,542 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14951.78 (± 1109.51)
+🔍 Accuracy (R² Score - Cross Validation): 0.8824 (88%) (± 0.04)
+
+=================
+
+2025-04-04 10:13:58,543 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:13:58,556 [INFO] Model saved successfully.
+2025-04-04 10:13:58,556 [INFO] Training pipeline completed.
+2025-04-04 10:13:58,559 [INFO] Starting test process...
+2025-04-04 10:13:58,559 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\test\test_house_prices.csv...
+2025-04-04 10:13:58,580 [INFO] Data loaded successfully. Shape: (1459, 79)
+2025-04-04 10:13:58,580 [INFO] Applying feature engineering...
+2025-04-04 10:13:58,584 [INFO] Feature engineering applied successfully.
+2025-04-04 10:13:58,584 [INFO] Loading model from \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl...
+2025-04-04 10:13:58,602 [INFO] Model loaded successfully.
+2025-04-04 10:13:58,629 [INFO] Loading model from \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:13:58,681 [INFO] Model loaded successfully.
+2025-04-04 10:13:58,694 [RESULT] 
+
+===== RESULT =====
+✅ Predictions saved successfully! 📂 File path: \python_projects\machine_learning\house_price_prediction\src\results\predictions.csv
+=================
+
+2025-04-04 10:13:58,695 [INFO] Test process completed.
+2025-04-04 10:14:06,327 [INFO] Training pipeline started...
+2025-04-04 10:14:06,328 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:14:06,342 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:14:06,342 [INFO] Applying feature engineering...
+2025-04-04 10:14:06,345 [INFO] Feature engineering applied successfully.
+2025-04-04 10:14:06,345 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:14:06,350 [INFO] Data split completed. Training size: (1168, 82), Validation size: (292, 82)
+2025-04-04 10:14:06,351 [INFO] Preprocessing data...
+2025-04-04 10:14:06,393 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:14:06,394 [INFO] Training the model...
+2025-04-04 10:14:07,276 [INFO] Model training completed.
+2025-04-04 10:14:07,277 [INFO] Evaluating model performance...
+2025-04-04 10:14:07,281 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 14811.46
+🔍 Accuracy (R² Score): 0.9253 (93%)
+
+=================
+
+2025-04-04 10:14:07,281 [INFO] Performing cross-validation...
+2025-04-04 10:14:14,388 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14896.15 (± 1018.70)
+🔍 Accuracy (R² Score - Cross Validation): 0.8815 (88%) (± 0.05)
+
+=================
+
+2025-04-04 10:14:14,389 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:14:14,402 [INFO] Model saved successfully.
+2025-04-04 10:14:14,403 [INFO] Training pipeline completed.
+2025-04-04 10:14:24,514 [INFO] Training pipeline started...
+2025-04-04 10:14:24,515 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:14:24,532 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:14:24,533 [INFO] Applying feature engineering...
+2025-04-04 10:14:24,535 [INFO] Feature engineering applied successfully.
+2025-04-04 10:14:24,535 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:14:24,540 [INFO] Data split completed. Training size: (1168, 82), Validation size: (292, 82)
+2025-04-04 10:14:24,540 [INFO] Preprocessing data...
+2025-04-04 10:14:24,582 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:14:24,582 [INFO] Training the model...
+2025-04-04 10:14:25,392 [INFO] Model training completed.
+2025-04-04 10:14:25,393 [INFO] Evaluating model performance...
+2025-04-04 10:14:25,399 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 15065.65
+🔍 Accuracy (R² Score): 0.9226 (92%)
+
+=================
+
+2025-04-04 10:14:25,399 [INFO] Performing cross-validation...
+2025-04-04 10:14:33,221 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14778.75 (± 753.77)
+🔍 Accuracy (R² Score - Cross Validation): 0.8850 (88%) (± 0.04)
+
+=================
+
+2025-04-04 10:14:33,222 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:14:33,235 [INFO] Model saved successfully.
+2025-04-04 10:14:33,236 [INFO] Training pipeline completed.
+2025-04-04 10:14:36,526 [INFO] Training pipeline started...
+2025-04-04 10:14:36,526 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:14:36,541 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:14:36,541 [INFO] Applying feature engineering...
+2025-04-04 10:14:36,544 [INFO] Feature engineering applied successfully.
+2025-04-04 10:14:36,545 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:14:36,550 [INFO] Data split completed. Training size: (1168, 82), Validation size: (292, 82)
+2025-04-04 10:14:36,551 [INFO] Preprocessing data...
+2025-04-04 10:14:36,589 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:14:36,589 [INFO] Training the model...
+2025-04-04 10:14:37,473 [INFO] Model training completed.
+2025-04-04 10:14:37,474 [INFO] Evaluating model performance...
+2025-04-04 10:14:37,478 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 14825.99
+🔍 Accuracy (R² Score): 0.9219 (92%)
+
+=================
+
+2025-04-04 10:14:37,478 [INFO] Performing cross-validation...
+2025-04-04 10:14:44,624 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14827.44 (± 811.93)
+🔍 Accuracy (R² Score - Cross Validation): 0.8851 (89%) (± 0.04)
+
+=================
+
+2025-04-04 10:14:44,625 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:14:44,640 [INFO] Model saved successfully.
+2025-04-04 10:14:44,641 [INFO] Training pipeline completed.
+2025-04-04 10:14:48,961 [INFO] Training pipeline started...
+2025-04-04 10:14:48,962 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:14:48,980 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:14:48,980 [INFO] Applying feature engineering...
+2025-04-04 10:14:48,985 [INFO] Feature engineering applied successfully.
+2025-04-04 10:14:48,986 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:14:48,990 [INFO] Data split completed. Training size: (1168, 83), Validation size: (292, 83)
+2025-04-04 10:14:48,991 [INFO] Preprocessing data...
+2025-04-04 10:14:49,034 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:14:49,035 [INFO] Training the model...
+2025-04-04 10:14:49,908 [INFO] Model training completed.
+2025-04-04 10:14:49,909 [INFO] Evaluating model performance...
+2025-04-04 10:14:49,914 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 14686.67
+🔍 Accuracy (R² Score): 0.9236 (92%)
+
+=================
+
+2025-04-04 10:14:49,914 [INFO] Performing cross-validation...
+2025-04-04 10:14:56,088 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14951.78 (± 1109.51)
+🔍 Accuracy (R² Score - Cross Validation): 0.8824 (88%) (± 0.04)
+
+=================
+
+2025-04-04 10:14:56,088 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:14:56,103 [INFO] Model saved successfully.
+2025-04-04 10:14:56,104 [INFO] Training pipeline completed.
+2025-04-04 10:15:05,363 [INFO] Training pipeline started...
+2025-04-04 10:15:05,363 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:15:05,377 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:15:05,377 [INFO] Applying feature engineering...
+2025-04-04 10:15:05,380 [INFO] Feature engineering applied successfully.
+2025-04-04 10:15:05,380 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:15:05,384 [INFO] Data split completed. Training size: (1168, 82), Validation size: (292, 82)
+2025-04-04 10:15:05,384 [INFO] Preprocessing data...
+2025-04-04 10:15:05,423 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:15:05,424 [INFO] Training the model...
+2025-04-04 10:15:06,253 [INFO] Model training completed.
+2025-04-04 10:15:06,253 [INFO] Evaluating model performance...
+2025-04-04 10:15:06,257 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 14825.99
+🔍 Accuracy (R² Score): 0.9219 (92%)
+
+=================
+
+2025-04-04 10:15:06,258 [INFO] Performing cross-validation...
+2025-04-04 10:15:12,401 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14827.44 (± 811.93)
+🔍 Accuracy (R² Score - Cross Validation): 0.8851 (89%) (± 0.04)
+
+=================
+
+2025-04-04 10:15:12,401 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:15:12,414 [INFO] Model saved successfully.
+2025-04-04 10:15:12,414 [INFO] Training pipeline completed.
+2025-04-04 10:16:39,731 [INFO] Training pipeline started...
+2025-04-04 10:16:39,732 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:16:39,749 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:16:39,750 [INFO] Applying feature engineering...
+2025-04-04 10:16:39,753 [INFO] Feature engineering applied successfully.
+2025-04-04 10:16:39,753 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:16:39,757 [INFO] Data split completed. Training size: (1168, 82), Validation size: (292, 82)
+2025-04-04 10:16:39,758 [INFO] Preprocessing data...
+2025-04-04 10:16:39,799 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:16:39,799 [INFO] Training the model...
+2025-04-04 10:16:40,617 [INFO] Model training completed.
+2025-04-04 10:16:40,617 [INFO] Evaluating model performance...
+2025-04-04 10:16:40,621 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 14825.99
+🔍 Accuracy (R² Score): 0.9219 (92%)
+
+=================
+
+2025-04-04 10:16:40,622 [INFO] Performing cross-validation...
+2025-04-04 10:16:46,690 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14827.44 (± 811.93)
+🔍 Accuracy (R² Score - Cross Validation): 0.8851 (89%) (± 0.04)
+
+=================
+
+2025-04-04 10:16:46,690 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:16:46,705 [INFO] Model saved successfully.
+2025-04-04 10:16:46,705 [INFO] Training pipeline completed.
+2025-04-04 10:17:58,768 [INFO] Training pipeline started...
+2025-04-04 10:17:58,769 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:17:58,787 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:17:58,787 [INFO] Applying feature engineering...
+2025-04-04 10:17:58,790 [INFO] Feature engineering applied successfully.
+2025-04-04 10:17:58,791 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:17:58,797 [INFO] Data split completed. Training size: (1168, 82), Validation size: (292, 82)
+2025-04-04 10:17:58,797 [INFO] Preprocessing data...
+2025-04-04 10:17:58,843 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:17:58,843 [INFO] Training the model...
+2025-04-04 10:18:00,984 [INFO] Model training completed.
+2025-04-04 10:18:00,984 [INFO] Evaluating model performance...
+2025-04-04 10:18:00,992 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 14718.45
+🔍 Accuracy (R² Score): 0.9232 (92%)
+
+=================
+
+2025-04-04 10:18:00,992 [INFO] Performing cross-validation...
+2025-04-04 10:18:16,235 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 15233.08 (± 914.81)
+🔍 Accuracy (R² Score - Cross Validation): 0.8779 (88%) (± 0.04)
+
+=================
+
+2025-04-04 10:18:16,236 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:18:16,266 [INFO] Model saved successfully.
+2025-04-04 10:18:16,266 [INFO] Training pipeline completed.
+2025-04-04 10:18:27,497 [INFO] Training pipeline started...
+2025-04-04 10:18:27,498 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:18:27,512 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:18:27,512 [INFO] Applying feature engineering...
+2025-04-04 10:18:27,515 [INFO] Feature engineering applied successfully.
+2025-04-04 10:18:27,515 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:18:27,519 [INFO] Data split completed. Training size: (1168, 82), Validation size: (292, 82)
+2025-04-04 10:18:27,520 [INFO] Preprocessing data...
+2025-04-04 10:18:27,566 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:18:27,567 [INFO] Training the model...
+2025-04-04 10:18:28,787 [INFO] Model training completed.
+2025-04-04 10:18:28,788 [INFO] Evaluating model performance...
+2025-04-04 10:18:28,793 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 14721.64
+🔍 Accuracy (R² Score): 0.9231 (92%)
+
+=================
+
+2025-04-04 10:18:28,794 [INFO] Performing cross-validation...
+2025-04-04 10:18:49,788 [INFO] Training pipeline started...
+2025-04-04 10:18:49,789 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:18:49,803 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:18:49,803 [INFO] Applying feature engineering...
+2025-04-04 10:18:49,806 [INFO] Feature engineering applied successfully.
+2025-04-04 10:18:49,806 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:18:49,811 [INFO] Data split completed. Training size: (1168, 82), Validation size: (292, 82)
+2025-04-04 10:18:49,812 [INFO] Preprocessing data...
+2025-04-04 10:18:49,855 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:18:49,856 [INFO] Training the model...
+2025-04-04 10:18:51,850 [INFO] Model training completed.
+2025-04-04 10:18:51,851 [INFO] Evaluating model performance...
+2025-04-04 10:18:51,858 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 14718.45
+🔍 Accuracy (R² Score): 0.9232 (92%)
+
+=================
+
+2025-04-04 10:18:51,859 [INFO] Performing cross-validation...
+2025-04-04 10:19:08,213 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 15233.08 (± 914.81)
+🔍 Accuracy (R² Score - Cross Validation): 0.8779 (88%) (± 0.04)
+
+=================
+
+2025-04-04 10:19:08,213 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:19:08,239 [INFO] Model saved successfully.
+2025-04-04 10:19:08,239 [INFO] Training pipeline completed.
+2025-04-04 10:19:40,358 [INFO] Training pipeline started...
+2025-04-04 10:19:40,358 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:19:40,378 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:19:40,379 [INFO] Applying feature engineering...
+2025-04-04 10:19:40,382 [INFO] Feature engineering applied successfully.
+2025-04-04 10:19:40,383 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:19:40,388 [INFO] Data split completed. Training size: (1168, 82), Validation size: (292, 82)
+2025-04-04 10:19:40,388 [INFO] Preprocessing data...
+2025-04-04 10:19:40,441 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:19:40,441 [INFO] Training the model...
+2025-04-04 10:19:41,319 [INFO] Model training completed.
+2025-04-04 10:19:41,319 [INFO] Evaluating model performance...
+2025-04-04 10:19:41,326 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 15070.04
+🔍 Accuracy (R² Score): 0.9209 (92%)
+
+=================
+
+2025-04-04 10:19:41,326 [INFO] Performing cross-validation...
+2025-04-04 10:19:46,852 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14907.41 (± 903.42)
+🔍 Accuracy (R² Score - Cross Validation): 0.8768 (88%) (± 0.05)
+
+=================
+
+2025-04-04 10:19:46,853 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:19:46,865 [INFO] Model saved successfully.
+2025-04-04 10:19:46,866 [INFO] Training pipeline completed.
+2025-04-04 10:21:03,660 [INFO] Training pipeline started...
+2025-04-04 10:21:03,661 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:21:03,675 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:21:03,676 [INFO] Applying feature engineering...
+2025-04-04 10:21:03,679 [INFO] Feature engineering applied successfully.
+2025-04-04 10:21:03,679 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:21:03,683 [INFO] Data split completed. Training size: (1168, 82), Validation size: (292, 82)
+2025-04-04 10:21:03,683 [INFO] Preprocessing data...
+2025-04-04 10:21:03,725 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:21:03,726 [INFO] Training the model...
+2025-04-04 10:21:04,344 [INFO] Model training completed.
+2025-04-04 10:21:04,344 [INFO] Evaluating model performance...
+2025-04-04 10:21:04,350 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 15070.04
+📈 RMSLE: 0.1362
+🔍 Accuracy (R² Score): 0.9209 (92%)
+
+=================
+
+2025-04-04 10:21:04,350 [INFO] Performing cross-validation...
+2025-04-04 10:21:09,429 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14907.41 (± 903.42)
+🔍 Accuracy (R² Score - Cross Validation): 0.8768 (88%) (± 0.05)
+
+=================
+
+2025-04-04 10:21:09,429 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:21:09,443 [INFO] Model saved successfully.
+2025-04-04 10:21:09,443 [INFO] Training pipeline completed.
+2025-04-04 10:21:31,604 [INFO] Training pipeline started...
+2025-04-04 10:21:31,605 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:21:31,618 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:21:31,618 [INFO] Applying feature engineering...
+2025-04-04 10:21:31,621 [INFO] Feature engineering applied successfully.
+2025-04-04 10:21:31,621 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:21:31,627 [INFO] Data split completed. Training size: (1168, 82), Validation size: (292, 82)
+2025-04-04 10:21:31,627 [INFO] Preprocessing data...
+2025-04-04 10:21:31,668 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:21:31,669 [INFO] Training the model...
+2025-04-04 10:21:32,504 [INFO] Model training completed.
+2025-04-04 10:21:32,504 [INFO] Evaluating model performance...
+2025-04-04 10:21:32,511 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 14983.70
+📈 RMSLE: 0.1305
+🔍 Accuracy (R² Score): 0.9229 (92%)
+
+=================
+
+2025-04-04 10:21:32,511 [INFO] Performing cross-validation...
+2025-04-04 10:21:38,407 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14580.98 (± 896.27)
+🔍 Accuracy (R² Score - Cross Validation): 0.8878 (89%) (± 0.04)
+
+=================
+
+2025-04-04 10:21:38,408 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:21:38,421 [INFO] Model saved successfully.
+2025-04-04 10:21:38,421 [INFO] Training pipeline completed.
+2025-04-04 10:21:44,399 [INFO] Training pipeline started...
+2025-04-04 10:21:44,400 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:21:44,414 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:21:44,414 [INFO] Applying feature engineering...
+2025-04-04 10:21:44,417 [INFO] Feature engineering applied successfully.
+2025-04-04 10:21:44,417 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:21:44,423 [INFO] Data split completed. Training size: (1168, 82), Validation size: (292, 82)
+2025-04-04 10:21:44,424 [INFO] Preprocessing data...
+2025-04-04 10:21:44,469 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:21:44,469 [INFO] Training the model...
+2025-04-04 10:21:45,600 [INFO] Model training completed.
+2025-04-04 10:21:45,600 [INFO] Evaluating model performance...
+2025-04-04 10:21:45,606 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 14860.25
+📈 RMSLE: 0.1305
+🔍 Accuracy (R² Score): 0.9233 (92%)
+
+=================
+
+2025-04-04 10:21:45,606 [INFO] Performing cross-validation...
+2025-04-04 10:21:54,882 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14578.04 (± 865.88)
+🔍 Accuracy (R² Score - Cross Validation): 0.8884 (89%) (± 0.03)
+
+=================
+
+2025-04-04 10:21:54,883 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:21:54,902 [INFO] Model saved successfully.
+2025-04-04 10:21:54,902 [INFO] Training pipeline completed.
+2025-04-04 10:22:12,594 [INFO] Training pipeline started...
+2025-04-04 10:22:12,594 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:22:12,609 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:22:12,609 [INFO] Applying feature engineering...
+2025-04-04 10:22:12,612 [INFO] Feature engineering applied successfully.
+2025-04-04 10:22:12,612 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:22:12,616 [INFO] Data split completed. Training size: (1168, 82), Validation size: (292, 82)
+2025-04-04 10:22:12,616 [INFO] Preprocessing data...
+2025-04-04 10:22:12,660 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:22:12,661 [INFO] Training the model...
+2025-04-04 10:22:13,774 [INFO] Model training completed.
+2025-04-04 10:22:13,775 [INFO] Evaluating model performance...
+2025-04-04 10:22:13,780 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 14774.52
+📈 RMSLE: 0.1376
+🔍 Accuracy (R² Score): 0.9219 (92%)
+
+=================
+
+2025-04-04 10:22:13,780 [INFO] Performing cross-validation...
+2025-04-04 10:22:21,999 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14822.57 (± 819.43)
+🔍 Accuracy (R² Score - Cross Validation): 0.8855 (89%) (± 0.04)
+
+=================
+
+2025-04-04 10:22:21,999 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:22:22,016 [INFO] Model saved successfully.
+2025-04-04 10:22:22,017 [INFO] Training pipeline completed.
+2025-04-04 10:22:22,019 [INFO] Starting test process...
+2025-04-04 10:22:22,019 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\test\test_house_prices.csv...
+2025-04-04 10:22:22,042 [INFO] Data loaded successfully. Shape: (1459, 79)
+2025-04-04 10:22:22,042 [INFO] Applying feature engineering...
+2025-04-04 10:22:22,045 [INFO] Feature engineering applied successfully.
+2025-04-04 10:22:22,045 [INFO] Loading model from \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl...
+2025-04-04 10:22:22,060 [INFO] Model loaded successfully.
+2025-04-04 10:22:22,089 [INFO] Loading model from \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:22:22,154 [INFO] Model loaded successfully.
+2025-04-04 10:22:22,168 [RESULT] 
+
+===== RESULT =====
+✅ Predictions saved successfully! 📂 File path: \python_projects\machine_learning\house_price_prediction\src\results\predictions.csv
+=================
+
+2025-04-04 10:22:22,168 [INFO] Test process completed.
+2025-04-04 10:22:48,138 [INFO] Training pipeline started...
+2025-04-04 10:22:48,139 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:22:48,151 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:22:48,152 [INFO] Applying feature engineering...
+2025-04-04 10:22:48,155 [INFO] Feature engineering applied successfully.
+2025-04-04 10:22:48,155 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:22:48,159 [INFO] Data split completed. Training size: (1168, 82), Validation size: (292, 82)
+2025-04-04 10:22:48,160 [INFO] Preprocessing data...
+2025-04-04 10:22:48,201 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:22:48,202 [INFO] Training the model...
+2025-04-04 10:22:49,582 [INFO] Model training completed.
+2025-04-04 10:22:49,583 [INFO] Evaluating model performance...
+2025-04-04 10:22:49,623 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 14798.76
+📈 RMSLE: 0.1380
+🔍 Accuracy (R² Score): 0.9217 (92%)
+
+=================
+
+2025-04-04 10:22:49,642 [INFO] Performing cross-validation...
+2025-04-04 10:22:59,579 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14816.19 (± 830.11)
+🔍 Accuracy (R² Score - Cross Validation): 0.8855 (89%) (± 0.04)
+
+=================
+
+2025-04-04 10:22:59,580 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:22:59,601 [INFO] Model saved successfully.
+2025-04-04 10:22:59,601 [INFO] Training pipeline completed.
+2025-04-04 10:23:15,742 [INFO] Training pipeline started...
+2025-04-04 10:23:15,742 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:23:15,758 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:23:15,759 [INFO] Applying feature engineering...
+2025-04-04 10:23:15,761 [INFO] Feature engineering applied successfully.
+2025-04-04 10:23:15,762 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:23:15,766 [INFO] Data split completed. Training size: (1168, 82), Validation size: (292, 82)
+2025-04-04 10:23:15,766 [INFO] Preprocessing data...
+2025-04-04 10:23:15,809 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:23:15,810 [INFO] Training the model...
+2025-04-04 10:23:16,616 [INFO] Model training completed.
+2025-04-04 10:23:16,617 [INFO] Evaluating model performance...
+2025-04-04 10:23:16,623 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 14624.81
+📈 RMSLE: 0.1326
+🔍 Accuracy (R² Score): 0.9246 (92%)
+
+=================
+
+2025-04-04 10:23:16,624 [INFO] Performing cross-validation...
+2025-04-04 10:23:22,672 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14655.88 (± 688.59)
+🔍 Accuracy (R² Score - Cross Validation): 0.8829 (88%) (± 0.04)
+
+=================
+
+2025-04-04 10:23:22,672 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:23:22,685 [INFO] Model saved successfully.
+2025-04-04 10:23:22,686 [INFO] Training pipeline completed.
+2025-04-04 10:23:41,363 [INFO] Training pipeline started...
+2025-04-04 10:23:41,363 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:23:41,377 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:23:41,378 [INFO] Applying feature engineering...
+2025-04-04 10:23:41,381 [INFO] Feature engineering applied successfully.
+2025-04-04 10:23:41,381 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:23:41,386 [INFO] Data split completed. Training size: (1168, 82), Validation size: (292, 82)
+2025-04-04 10:23:41,386 [INFO] Preprocessing data...
+2025-04-04 10:23:41,430 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:23:41,430 [INFO] Training the model...
+2025-04-04 10:23:42,173 [INFO] Model training completed.
+2025-04-04 10:23:42,174 [INFO] Evaluating model performance...
+2025-04-04 10:23:42,179 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 14743.93
+📈 RMSLE: 0.1322
+🔍 Accuracy (R² Score): 0.9212 (92%)
+
+=================
+
+2025-04-04 10:23:42,179 [INFO] Performing cross-validation...
+2025-04-04 10:23:47,415 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14473.33 (± 926.49)
+🔍 Accuracy (R² Score - Cross Validation): 0.8901 (89%) (± 0.04)
+
+=================
+
+2025-04-04 10:23:47,416 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:23:47,429 [INFO] Model saved successfully.
+2025-04-04 10:23:47,430 [INFO] Training pipeline completed.
+2025-04-04 10:24:43,196 [INFO] Training pipeline started...
+2025-04-04 10:24:43,196 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:24:43,210 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:24:43,210 [INFO] Applying feature engineering...
+2025-04-04 10:24:43,213 [INFO] Feature engineering applied successfully.
+2025-04-04 10:24:43,213 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:24:43,218 [INFO] Data split completed. Training size: (1168, 82), Validation size: (292, 82)
+2025-04-04 10:24:43,218 [INFO] Preprocessing data...
+2025-04-04 10:24:43,262 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:24:43,262 [INFO] Training the model...
+2025-04-04 10:24:43,919 [INFO] Model training completed.
+2025-04-04 10:24:43,920 [INFO] Evaluating model performance...
+2025-04-04 10:24:43,924 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 14697.82
+📈 RMSLE: 0.1293
+🔍 Accuracy (R² Score): 0.9228 (92%)
+
+=================
+
+2025-04-04 10:24:43,924 [INFO] Performing cross-validation...
+2025-04-04 10:24:48,812 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14886.21 (± 897.15)
+🔍 Accuracy (R² Score - Cross Validation): 0.8805 (88%) (± 0.04)
+
+=================
+
+2025-04-04 10:24:48,812 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:24:48,823 [INFO] Model saved successfully.
+2025-04-04 10:24:48,823 [INFO] Training pipeline completed.
+2025-04-04 10:25:05,446 [INFO] Training pipeline started...
+2025-04-04 10:25:05,447 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:25:05,461 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:25:05,462 [INFO] Applying feature engineering...
+2025-04-04 10:25:05,465 [INFO] Feature engineering applied successfully.
+2025-04-04 10:25:05,465 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:25:05,470 [INFO] Data split completed. Training size: (1168, 82), Validation size: (292, 82)
+2025-04-04 10:25:05,470 [INFO] Preprocessing data...
+2025-04-04 10:25:05,513 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:25:05,513 [INFO] Training the model...
+2025-04-04 10:25:06,343 [INFO] Model training completed.
+2025-04-04 10:25:06,343 [INFO] Evaluating model performance...
+2025-04-04 10:25:06,348 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 15128.05
+📈 RMSLE: 0.1333
+🔍 Accuracy (R² Score): 0.9165 (92%)
+
+=================
+
+2025-04-04 10:25:06,349 [INFO] Performing cross-validation...
+2025-04-04 10:25:12,965 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 15003.82 (± 851.80)
+🔍 Accuracy (R² Score - Cross Validation): 0.8819 (88%) (± 0.05)
+
+=================
+
+2025-04-04 10:25:12,966 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:25:12,980 [INFO] Model saved successfully.
+2025-04-04 10:25:12,981 [INFO] Training pipeline completed.
+2025-04-04 10:25:17,635 [INFO] Training pipeline started...
+2025-04-04 10:25:17,636 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:25:17,650 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:25:17,650 [INFO] Applying feature engineering...
+2025-04-04 10:25:17,653 [INFO] Feature engineering applied successfully.
+2025-04-04 10:25:17,653 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:25:17,657 [INFO] Data split completed. Training size: (1168, 82), Validation size: (292, 82)
+2025-04-04 10:25:17,658 [INFO] Preprocessing data...
+2025-04-04 10:25:17,701 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:25:17,701 [INFO] Training the model...
+2025-04-04 10:25:18,539 [INFO] Model training completed.
+2025-04-04 10:25:18,540 [INFO] Evaluating model performance...
+2025-04-04 10:25:18,546 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 14624.81
+📈 RMSLE: 0.1326
+🔍 Accuracy (R² Score): 0.9246 (92%)
+
+=================
+
+2025-04-04 10:25:18,546 [INFO] Performing cross-validation...
+2025-04-04 10:25:24,602 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14655.88 (± 688.59)
+🔍 Accuracy (R² Score - Cross Validation): 0.8829 (88%) (± 0.04)
+
+=================
+
+2025-04-04 10:25:24,603 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:25:24,616 [INFO] Model saved successfully.
+2025-04-04 10:25:24,617 [INFO] Training pipeline completed.
+2025-04-04 10:25:37,606 [INFO] Training pipeline started...
+2025-04-04 10:25:37,606 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:25:37,620 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:25:37,621 [INFO] Applying feature engineering...
+2025-04-04 10:25:37,623 [INFO] Feature engineering applied successfully.
+2025-04-04 10:25:37,624 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:25:37,628 [INFO] Data split completed. Training size: (1168, 82), Validation size: (292, 82)
+2025-04-04 10:25:37,628 [INFO] Preprocessing data...
+2025-04-04 10:25:37,672 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:25:37,673 [INFO] Training the model...
+2025-04-04 10:25:38,412 [INFO] Model training completed.
+2025-04-04 10:25:38,412 [INFO] Evaluating model performance...
+2025-04-04 10:25:38,419 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 14580.54
+📈 RMSLE: 0.1337
+🔍 Accuracy (R² Score): 0.9208 (92%)
+
+=================
+
+2025-04-04 10:25:38,419 [INFO] Performing cross-validation...
+2025-04-04 10:25:43,810 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14669.45 (± 669.91)
+🔍 Accuracy (R² Score - Cross Validation): 0.8871 (89%) (± 0.04)
+
+=================
+
+2025-04-04 10:25:43,811 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:25:43,826 [INFO] Model saved successfully.
+2025-04-04 10:25:43,827 [INFO] Training pipeline completed.
+2025-04-04 10:26:42,880 [INFO] Training pipeline started...
+2025-04-04 10:26:42,881 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:26:42,894 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:26:42,895 [INFO] Applying feature engineering...
+2025-04-04 10:26:42,897 [INFO] Feature engineering applied successfully.
+2025-04-04 10:26:42,897 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:26:42,905 [INFO] Data split completed. Training size: (1168, 82), Validation size: (292, 82)
+2025-04-04 10:26:42,905 [INFO] Preprocessing data...
+2025-04-04 10:26:42,948 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:26:42,949 [INFO] Training the model...
+2025-04-04 10:26:43,579 [INFO] Model training completed.
+2025-04-04 10:26:43,579 [INFO] Evaluating model performance...
+2025-04-04 10:26:43,584 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 14057.32
+📈 RMSLE: 0.1256
+🔍 Accuracy (R² Score): 0.9253 (93%)
+
+=================
+
+2025-04-04 10:26:43,584 [INFO] Performing cross-validation...
+2025-04-04 10:26:48,326 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14644.30 (± 901.22)
+🔍 Accuracy (R² Score - Cross Validation): 0.8835 (88%) (± 0.05)
+
+=================
+
+2025-04-04 10:26:48,326 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:26:48,338 [INFO] Model saved successfully.
+2025-04-04 10:26:48,338 [INFO] Training pipeline completed.
+2025-04-04 10:29:40,242 [INFO] Training pipeline started...
+2025-04-04 10:29:40,243 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:29:40,265 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:29:40,266 [INFO] Applying feature engineering...
+2025-04-04 10:29:40,268 [INFO] Feature engineering applied successfully.
+2025-04-04 10:29:40,268 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:29:40,273 [INFO] Data split completed. Training size: (1168, 82), Validation size: (292, 82)
+2025-04-04 10:29:40,273 [INFO] Preprocessing data...
+2025-04-04 10:29:40,323 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:29:40,324 [INFO] Training the model...
+2025-04-04 10:29:41,190 [INFO] Model training completed.
+2025-04-04 10:29:41,191 [INFO] Evaluating model performance...
+2025-04-04 10:29:41,197 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 14783.94
+📈 RMSLE: 0.1317
+🔍 Accuracy (R² Score): 0.9213 (92%)
+
+=================
+
+2025-04-04 10:29:41,197 [INFO] Performing cross-validation...
+2025-04-04 10:29:48,175 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 15123.55 (± 821.04)
+🔍 Accuracy (R² Score - Cross Validation): 0.8812 (88%) (± 0.05)
+
+=================
+
+2025-04-04 10:29:48,176 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:29:48,192 [INFO] Model saved successfully.
+2025-04-04 10:29:48,194 [INFO] Training pipeline completed.
+2025-04-04 10:31:29,477 [INFO] Training pipeline started...
+2025-04-04 10:31:29,478 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:31:29,492 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:31:29,493 [INFO] Applying feature engineering...
+2025-04-04 10:31:29,496 [INFO] Feature engineering applied successfully.
+2025-04-04 10:31:29,496 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:31:29,500 [INFO] Data split completed. Training size: (1168, 82), Validation size: (292, 82)
+2025-04-04 10:31:29,501 [INFO] Preprocessing data...
+2025-04-04 10:31:29,545 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:31:29,546 [INFO] Training the model...
+2025-04-04 10:31:30,317 [INFO] Model training completed.
+2025-04-04 10:31:30,317 [INFO] Evaluating model performance...
+2025-04-04 10:31:30,322 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 14476.12
+📈 RMSLE: 0.1299
+🔍 Accuracy (R² Score): 0.9271 (93%)
+
+=================
+
+2025-04-04 10:31:30,323 [INFO] Performing cross-validation...
+2025-04-04 10:31:35,878 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14791.19 (± 743.65)
+🔍 Accuracy (R² Score - Cross Validation): 0.8852 (89%) (± 0.04)
+
+=================
+
+2025-04-04 10:31:35,878 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:31:35,892 [INFO] Model saved successfully.
+2025-04-04 10:31:35,892 [INFO] Training pipeline completed.
+2025-04-04 10:32:01,364 [INFO] Training pipeline started...
+2025-04-04 10:32:01,365 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:32:01,378 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:32:01,379 [INFO] Applying feature engineering...
+2025-04-04 10:32:01,381 [INFO] Feature engineering applied successfully.
+2025-04-04 10:32:01,382 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:32:01,385 [INFO] Data split completed. Training size: (1168, 82), Validation size: (292, 82)
+2025-04-04 10:32:01,386 [INFO] Preprocessing data...
+2025-04-04 10:32:01,430 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:32:01,430 [INFO] Training the model...
+2025-04-04 10:32:02,250 [INFO] Model training completed.
+2025-04-04 10:32:02,251 [INFO] Evaluating model performance...
+2025-04-04 10:32:02,257 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 14476.12
+📈 RMSLE: 0.1299
+🔍 Accuracy (R² Score): 0.9271 (93%)
+
+=================
+
+2025-04-04 10:32:02,257 [INFO] Performing cross-validation...
+2025-04-04 10:32:07,939 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14791.19 (± 743.65)
+🔍 Accuracy (R² Score - Cross Validation): 0.8852 (89%) (± 0.04)
+
+=================
+
+2025-04-04 10:32:07,940 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:32:07,953 [INFO] Model saved successfully.
+2025-04-04 10:32:07,953 [INFO] Training pipeline completed.
+2025-04-04 10:32:11,720 [INFO] Training pipeline started...
+2025-04-04 10:32:11,721 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:32:11,737 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:32:11,737 [INFO] Applying feature engineering...
+2025-04-04 10:32:11,741 [INFO] Feature engineering applied successfully.
+2025-04-04 10:32:11,741 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:32:11,745 [INFO] Data split completed. Training size: (1168, 82), Validation size: (292, 82)
+2025-04-04 10:32:11,746 [INFO] Preprocessing data...
+2025-04-04 10:32:11,788 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:32:11,789 [INFO] Training the model...
+2025-04-04 10:32:12,596 [INFO] Model training completed.
+2025-04-04 10:32:12,596 [INFO] Evaluating model performance...
+2025-04-04 10:32:12,603 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 14476.12
+📈 RMSLE: 0.1299
+🔍 Accuracy (R² Score): 0.9271 (93%)
+
+=================
+
+2025-04-04 10:32:12,604 [INFO] Performing cross-validation...
+2025-04-04 10:32:18,347 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14791.19 (± 743.65)
+🔍 Accuracy (R² Score - Cross Validation): 0.8852 (89%) (± 0.04)
+
+=================
+
+2025-04-04 10:32:18,347 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:32:18,363 [INFO] Model saved successfully.
+2025-04-04 10:32:18,363 [INFO] Training pipeline completed.
+2025-04-04 10:32:18,365 [INFO] Starting test process...
+2025-04-04 10:32:18,365 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\test\test_house_prices.csv...
+2025-04-04 10:32:18,385 [INFO] Data loaded successfully. Shape: (1459, 79)
+2025-04-04 10:32:18,386 [INFO] Applying feature engineering...
+2025-04-04 10:32:18,389 [INFO] Feature engineering applied successfully.
+2025-04-04 10:32:18,390 [INFO] Loading model from \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl...
+2025-04-04 10:32:18,408 [INFO] Model loaded successfully.
+2025-04-04 10:32:18,433 [INFO] Loading model from \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:32:18,482 [INFO] Model loaded successfully.
+2025-04-04 10:32:18,496 [RESULT] 
+
+===== RESULT =====
+✅ Predictions saved successfully! 📂 File path: \python_projects\machine_learning\house_price_prediction\src\results\predictions.csv
+=================
+
+2025-04-04 10:32:18,497 [INFO] Test process completed.
+2025-04-04 10:35:25,173 [INFO] Training pipeline started...
+2025-04-04 10:35:25,174 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:35:25,189 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:35:25,190 [INFO] Applying feature engineering...
+2025-04-04 10:35:25,193 [INFO] Feature engineering applied successfully.
+2025-04-04 10:35:25,193 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:35:25,198 [INFO] Data split completed. Training size: (1168, 83), Validation size: (292, 83)
+2025-04-04 10:35:25,198 [INFO] Preprocessing data...
+2025-04-04 10:35:25,237 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:35:25,238 [INFO] Training the model...
+2025-04-04 10:35:25,876 [INFO] Model training completed.
+2025-04-04 10:35:25,877 [INFO] Evaluating model performance...
+2025-04-04 10:35:25,881 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 14728.85
+📈 RMSLE: 0.1333
+🔍 Accuracy (R² Score): 0.9177 (92%)
+
+=================
+
+2025-04-04 10:35:25,881 [INFO] Performing cross-validation...
+2025-04-04 10:35:30,602 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14785.37 (± 1153.92)
+🔍 Accuracy (R² Score - Cross Validation): 0.8869 (89%) (± 0.05)
+
+=================
+
+2025-04-04 10:35:30,602 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:35:30,614 [INFO] Model saved successfully.
+2025-04-04 10:35:30,614 [INFO] Training pipeline completed.
+2025-04-04 10:35:55,349 [INFO] Training pipeline started...
+2025-04-04 10:35:55,350 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:35:55,365 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:35:55,365 [INFO] Applying feature engineering...
+2025-04-04 10:35:55,369 [INFO] Feature engineering applied successfully.
+2025-04-04 10:35:55,370 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:35:55,374 [INFO] Data split completed. Training size: (1168, 83), Validation size: (292, 83)
+2025-04-04 10:35:55,375 [INFO] Preprocessing data...
+2025-04-04 10:35:55,415 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:35:55,416 [INFO] Training the model...
+2025-04-04 10:35:56,198 [INFO] Model training completed.
+2025-04-04 10:35:56,199 [INFO] Evaluating model performance...
+2025-04-04 10:35:56,203 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 14728.85
+📈 RMSLE: 0.1333
+🔍 Accuracy (R² Score): 0.9177 (92%)
+
+=================
+
+2025-04-04 10:35:56,204 [INFO] Performing cross-validation...
+2025-04-04 10:36:01,933 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14785.37 (± 1153.92)
+🔍 Accuracy (R² Score - Cross Validation): 0.8869 (89%) (± 0.05)
+
+=================
+
+2025-04-04 10:36:01,934 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:36:01,948 [INFO] Model saved successfully.
+2025-04-04 10:36:01,948 [INFO] Training pipeline completed.
+2025-04-04 10:36:01,950 [INFO] Starting test process...
+2025-04-04 10:36:01,951 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\test\test_house_prices.csv...
+2025-04-04 10:36:01,974 [INFO] Data loaded successfully. Shape: (1459, 79)
+2025-04-04 10:36:01,974 [INFO] Applying feature engineering...
+2025-04-04 10:36:01,978 [INFO] Feature engineering applied successfully.
+2025-04-04 10:36:01,978 [INFO] Loading model from \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl...
+2025-04-04 10:36:01,994 [INFO] Model loaded successfully.
+2025-04-04 10:36:02,021 [INFO] Loading model from \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:36:02,070 [INFO] Model loaded successfully.
+2025-04-04 10:36:02,084 [RESULT] 
+
+===== RESULT =====
+✅ Predictions saved successfully! 📂 File path: \python_projects\machine_learning\house_price_prediction\src\results\predictions.csv
+=================
+
+2025-04-04 10:36:02,084 [INFO] Test process completed.
+2025-04-04 10:36:53,264 [INFO] Training pipeline started...
+2025-04-04 10:36:53,264 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:36:53,280 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:36:53,280 [INFO] Applying feature engineering...
+2025-04-04 10:36:53,283 [INFO] Feature engineering applied successfully.
+2025-04-04 10:36:53,283 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:36:53,287 [INFO] Data split completed. Training size: (1168, 82), Validation size: (292, 82)
+2025-04-04 10:36:53,288 [INFO] Preprocessing data...
+2025-04-04 10:36:53,327 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:36:53,327 [INFO] Training the model...
+2025-04-04 10:36:54,087 [INFO] Model training completed.
+2025-04-04 10:36:54,088 [INFO] Evaluating model performance...
+2025-04-04 10:36:54,092 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 14476.12
+📈 RMSLE: 0.1299
+🔍 Accuracy (R² Score): 0.9271 (93%)
+
+=================
+
+2025-04-04 10:36:54,093 [INFO] Performing cross-validation...
+2025-04-04 10:36:59,721 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14791.19 (± 743.65)
+🔍 Accuracy (R² Score - Cross Validation): 0.8852 (89%) (± 0.04)
+
+=================
+
+2025-04-04 10:36:59,721 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:36:59,735 [INFO] Model saved successfully.
+2025-04-04 10:36:59,736 [INFO] Training pipeline completed.
+2025-04-04 10:37:37,263 [INFO] Training pipeline started...
+2025-04-04 10:37:37,264 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:37:37,277 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:37:37,277 [INFO] Applying feature engineering...
+2025-04-04 10:37:37,280 [INFO] Feature engineering applied successfully.
+2025-04-04 10:37:37,280 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:37:37,286 [INFO] Data split completed. Training size: (1168, 82), Validation size: (292, 82)
+2025-04-04 10:37:37,287 [INFO] Preprocessing data...
+2025-04-04 10:37:37,327 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:37:37,327 [INFO] Training the model...
+2025-04-04 10:37:38,364 [INFO] Model training completed.
+2025-04-04 10:37:38,365 [INFO] Evaluating model performance...
+2025-04-04 10:37:38,371 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 14698.28
+📈 RMSLE: 0.1324
+🔍 Accuracy (R² Score): 0.9185 (92%)
+
+=================
+
+2025-04-04 10:37:38,372 [INFO] Performing cross-validation...
+2025-04-04 10:37:45,436 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14384.44 (± 879.88)
+🔍 Accuracy (R² Score - Cross Validation): 0.8896 (89%) (± 0.03)
+
+=================
+
+2025-04-04 10:37:45,436 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:37:45,456 [INFO] Model saved successfully.
+2025-04-04 10:37:45,456 [INFO] Training pipeline completed.
+2025-04-04 10:37:54,904 [INFO] Training pipeline started...
+2025-04-04 10:37:54,905 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:37:54,920 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:37:54,920 [INFO] Applying feature engineering...
+2025-04-04 10:37:54,923 [INFO] Feature engineering applied successfully.
+2025-04-04 10:37:54,923 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:37:54,927 [INFO] Data split completed. Training size: (1168, 82), Validation size: (292, 82)
+2025-04-04 10:37:54,927 [INFO] Preprocessing data...
+2025-04-04 10:37:54,967 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:37:54,968 [INFO] Training the model...
+2025-04-04 10:37:56,072 [INFO] Model training completed.
+2025-04-04 10:37:56,072 [INFO] Evaluating model performance...
+2025-04-04 10:37:56,077 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 14698.28
+📈 RMSLE: 0.1324
+🔍 Accuracy (R² Score): 0.9185 (92%)
+
+=================
+
+2025-04-04 10:37:56,078 [INFO] Performing cross-validation...
+2025-04-04 10:38:03,950 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14384.44 (± 879.88)
+🔍 Accuracy (R² Score - Cross Validation): 0.8896 (89%) (± 0.03)
+
+=================
+
+2025-04-04 10:38:03,951 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:38:03,971 [INFO] Model saved successfully.
+2025-04-04 10:38:03,971 [INFO] Training pipeline completed.
+2025-04-04 10:38:03,973 [INFO] Starting test process...
+2025-04-04 10:38:03,974 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\test\test_house_prices.csv...
+2025-04-04 10:38:03,993 [INFO] Data loaded successfully. Shape: (1459, 79)
+2025-04-04 10:38:03,994 [INFO] Applying feature engineering...
+2025-04-04 10:38:03,997 [INFO] Feature engineering applied successfully.
+2025-04-04 10:38:03,998 [INFO] Loading model from \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl...
+2025-04-04 10:38:04,016 [INFO] Model loaded successfully.
+2025-04-04 10:38:04,051 [INFO] Loading model from \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:38:04,111 [INFO] Model loaded successfully.
+2025-04-04 10:38:04,129 [RESULT] 
+
+===== RESULT =====
+✅ Predictions saved successfully! 📂 File path: \python_projects\machine_learning\house_price_prediction\src\results\predictions.csv
+=================
+
+2025-04-04 10:38:04,129 [INFO] Test process completed.
+2025-04-04 10:39:09,490 [INFO] Training pipeline started...
+2025-04-04 10:39:09,490 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:39:09,504 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:39:09,505 [INFO] Applying feature engineering...
+2025-04-04 10:39:09,507 [INFO] Feature engineering applied successfully.
+2025-04-04 10:39:09,508 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:39:09,511 [INFO] Data split completed. Training size: (1168, 82), Validation size: (292, 82)
+2025-04-04 10:39:09,512 [INFO] Preprocessing data...
+2025-04-04 10:39:09,552 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:39:09,553 [INFO] Training the model...
+2025-04-04 10:39:10,395 [INFO] Model training completed.
+2025-04-04 10:39:10,396 [INFO] Evaluating model performance...
+2025-04-04 10:39:10,401 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 14698.28
+📈 RMSLE: 0.1324
+🔍 Accuracy (R² Score): 0.9185 (92%)
+
+=================
+
+2025-04-04 10:39:10,402 [INFO] Performing cross-validation...
+2025-04-04 10:39:16,355 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14384.44 (± 879.88)
+🔍 Accuracy (R² Score - Cross Validation): 0.8896 (89%) (± 0.03)
+
+=================
+
+2025-04-04 10:39:16,355 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:39:16,372 [INFO] Model saved successfully.
+2025-04-04 10:39:16,372 [INFO] Training pipeline completed.
+2025-04-04 10:39:16,375 [INFO] Starting test process...
+2025-04-04 10:39:16,375 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\test\test_house_prices.csv...
+2025-04-04 10:39:16,393 [INFO] Data loaded successfully. Shape: (1459, 79)
+2025-04-04 10:39:16,393 [INFO] Applying feature engineering...
+2025-04-04 10:39:16,396 [INFO] Feature engineering applied successfully.
+2025-04-04 10:39:16,396 [INFO] Loading model from \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl...
+2025-04-04 10:39:16,411 [INFO] Model loaded successfully.
+2025-04-04 10:39:16,437 [INFO] Loading model from \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:39:16,462 [INFO] Model loaded successfully.
+2025-04-04 10:39:16,475 [RESULT] 
+
+===== RESULT =====
+✅ Predictions saved successfully! 📂 File path: \python_projects\machine_learning\house_price_prediction\src\results\predictions.csv
+=================
+
+2025-04-04 10:39:16,475 [INFO] Test process completed.
+2025-04-04 10:41:51,263 [INFO] Training pipeline started...
+2025-04-04 10:41:51,264 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:41:51,278 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:41:51,278 [INFO] Applying feature engineering...
+2025-04-04 10:41:51,281 [INFO] Feature engineering applied successfully.
+2025-04-04 10:41:51,281 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:41:51,285 [INFO] Data split completed. Training size: (1168, 82), Validation size: (292, 82)
+2025-04-04 10:41:51,285 [INFO] Preprocessing data...
+2025-04-04 10:41:51,329 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:41:51,329 [INFO] Training the model...
+2025-04-04 10:41:52,521 [INFO] Model training completed.
+2025-04-04 10:41:52,521 [INFO] Evaluating model performance...
+2025-04-04 10:41:52,527 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 14644.81
+📈 RMSLE: 0.1327
+🔍 Accuracy (R² Score): 0.9183 (92%)
+
+=================
+
+2025-04-04 10:41:52,527 [INFO] Performing cross-validation...
+2025-04-04 10:42:02,665 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14420.36 (± 893.79)
+🔍 Accuracy (R² Score - Cross Validation): 0.8898 (89%) (± 0.03)
+
+=================
+
+2025-04-04 10:42:02,665 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:42:02,690 [INFO] Model saved successfully.
+2025-04-04 10:42:02,690 [INFO] Training pipeline completed.
+2025-04-04 10:42:02,694 [INFO] Starting test process...
+2025-04-04 10:42:02,694 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\test\test_house_prices.csv...
+2025-04-04 10:42:02,713 [INFO] Data loaded successfully. Shape: (1459, 79)
+2025-04-04 10:42:02,713 [INFO] Applying feature engineering...
+2025-04-04 10:42:02,718 [INFO] Feature engineering applied successfully.
+2025-04-04 10:42:02,718 [INFO] Loading model from \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl...
+2025-04-04 10:42:02,735 [INFO] Model loaded successfully.
+2025-04-04 10:42:02,761 [INFO] Loading model from \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:42:02,846 [INFO] Model loaded successfully.
+2025-04-04 10:42:02,867 [RESULT] 
+
+===== RESULT =====
+✅ Predictions saved successfully! 📂 File path: \python_projects\machine_learning\house_price_prediction\src\results\predictions.csv
+=================
+
+2025-04-04 10:42:02,867 [INFO] Test process completed.
+2025-04-04 10:42:25,459 [INFO] Training pipeline started...
+2025-04-04 10:42:25,460 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 10:42:25,473 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 10:42:25,473 [INFO] Applying feature engineering...
+2025-04-04 10:42:25,477 [INFO] Feature engineering applied successfully.
+2025-04-04 10:42:25,477 [INFO] Splitting data into training and validation sets...
+2025-04-04 10:42:25,482 [INFO] Data split completed. Training size: (1168, 82), Validation size: (292, 82)
+2025-04-04 10:42:25,482 [INFO] Preprocessing data...
+2025-04-04 10:42:25,522 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 10:42:25,523 [INFO] Training the model...
+2025-04-04 10:42:26,699 [INFO] Model training completed.
+2025-04-04 10:42:26,699 [INFO] Evaluating model performance...
+2025-04-04 10:42:26,706 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 14682.72
+📈 RMSLE: 0.1329
+🔍 Accuracy (R² Score): 0.9184 (92%)
+
+=================
+
+2025-04-04 10:42:26,706 [INFO] Performing cross-validation...
+2025-04-04 10:42:34,804 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14392.16 (± 867.98)
+🔍 Accuracy (R² Score - Cross Validation): 0.8898 (89%) (± 0.03)
+
+=================
+
+2025-04-04 10:42:34,804 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:42:34,823 [INFO] Model saved successfully.
+2025-04-04 10:42:34,823 [INFO] Training pipeline completed.
+2025-04-04 10:42:34,828 [INFO] Starting test process...
+2025-04-04 10:42:34,828 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\test\test_house_prices.csv...
+2025-04-04 10:42:34,850 [INFO] Data loaded successfully. Shape: (1459, 79)
+2025-04-04 10:42:34,850 [INFO] Applying feature engineering...
+2025-04-04 10:42:34,853 [INFO] Feature engineering applied successfully.
+2025-04-04 10:42:34,854 [INFO] Loading model from \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl...
+2025-04-04 10:42:34,869 [INFO] Model loaded successfully.
+2025-04-04 10:42:34,896 [INFO] Loading model from \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 10:42:34,963 [INFO] Model loaded successfully.
+2025-04-04 10:42:34,983 [RESULT] 
+
+===== RESULT =====
+✅ Predictions saved successfully! 📂 File path: \python_projects\machine_learning\house_price_prediction\src\results\predictions.csv
+=================
+
+2025-04-04 10:42:34,983 [INFO] Test process completed.
+2025-04-04 11:54:44,887 [INFO] Training pipeline started...
+2025-04-04 11:54:45,943 [RESULT] 
+
+===== RESULT =====
+✅ Model evaluation completed.
+🎯 MAE: 14682.72
+📈 RMSLE: 0.1329
+🔍 Accuracy (R² Score): 0.9184 (92%)
+
+=================
+
+2025-04-04 11:55:03,391 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14346.75 (± 1972.81)
+🔍 Accuracy (R² Score - Cross Validation): 0.8879 (89%) (± 0.06)
+
+=================
+
+2025-04-04 11:55:03,413 [INFO] Training pipeline completed.
+2025-04-04 11:55:21,588 [INFO] Training pipeline started...
+2025-04-04 11:55:31,465 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14392.16 (± 867.98)
+🔍 Accuracy (R² Score - Cross Validation): 0.8898 (89%) (± 0.03)
+
+=================
+
+2025-04-04 11:55:31,489 [INFO] Training pipeline completed.
+2025-04-04 12:03:32,734 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14863.48 (± 1009.65)
+🔍 Accuracy (R² Score - Cross Validation): 0.8782 (88%) (± 0.05)
+
+=================
+
+2025-04-04 12:03:32,756 [INFO] Training pipeline completed.
+2025-04-04 12:07:32,916 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 15933.52 (± 923.27)
+🔍 Accuracy (R² Score - Cross Validation): 0.8623 (86%) (± 0.05)
+
+=================
+
+2025-04-04 12:07:32,938 [INFO] Training pipeline completed.
+2025-04-04 12:08:30,143 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 15933.52 (± 923.27)
+🔍 Accuracy (R² Score - Cross Validation): 0.8623 (86%) (± 0.05)
+
+=================
+
+2025-04-04 12:08:30,164 [INFO] Training pipeline completed.
+2025-04-04 12:09:26,646 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 15091.95 (± 1002.31)
+🔍 Accuracy (R² Score - Cross Validation): 0.8839 (88%) (± 0.04)
+
+=================
+
+2025-04-04 12:09:26,679 [INFO] Training pipeline completed.
+2025-04-04 12:09:52,139 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 15089.08 (± 879.39)
+🔍 Accuracy (R² Score - Cross Validation): 0.8760 (88%) (± 0.04)
+
+=================
+
+2025-04-04 12:09:52,169 [INFO] Training pipeline completed.
+2025-04-04 12:10:34,446 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 15267.87 (± 1140.87)
+🔍 Accuracy (R² Score - Cross Validation): 0.8789 (88%) (± 0.04)
+
+=================
+
+2025-04-04 12:10:34,475 [INFO] Training pipeline completed.
+2025-04-04 12:11:01,920 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14943.23 (± 867.96)
+🔍 Accuracy (R² Score - Cross Validation): 0.8821 (88%) (± 0.04)
+
+=================
+
+2025-04-04 12:11:01,947 [INFO] Training pipeline completed.
+2025-04-04 12:11:28,700 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14733.25 (± 909.22)
+🔍 Accuracy (R² Score - Cross Validation): 0.8789 (88%) (± 0.05)
+
+=================
+
+2025-04-04 12:11:28,728 [INFO] Training pipeline completed.
+2025-04-04 12:13:17,304 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 15067.93 (± 868.08)
+🔍 Accuracy (R² Score - Cross Validation): 0.8799 (88%) (± 0.05)
+
+=================
+
+2025-04-04 12:13:17,324 [INFO] Training pipeline completed.
+2025-04-04 12:13:35,895 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14767.07 (± 831.78)
+🔍 Accuracy (R² Score - Cross Validation): 0.8788 (88%) (± 0.05)
+
+=================
+
+2025-04-04 12:13:35,939 [INFO] Training pipeline completed.
+2025-04-04 12:14:18,418 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14828.99 (± 783.53)
+🔍 Accuracy (R² Score - Cross Validation): 0.8807 (88%) (± 0.04)
+
+=================
+
+2025-04-04 12:14:18,453 [INFO] Training pipeline completed.
+2025-04-04 12:14:44,317 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14733.25 (± 909.22)
+🔍 Accuracy (R² Score - Cross Validation): 0.8789 (88%) (± 0.05)
+
+=================
+
+2025-04-04 12:14:44,343 [INFO] Training pipeline completed.
+2025-04-04 12:15:34,367 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 15105.84 (± 1001.30)
+🔍 Accuracy (R² Score - Cross Validation): 0.8794 (88%) (± 0.05)
+
+=================
+
+2025-04-04 12:15:34,386 [INFO] Training pipeline completed.
+2025-04-04 12:24:31,063 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 15272.83 (± 938.70)
+🔍 Accuracy (R² Score - Cross Validation): 0.8756 (88%) (± 0.04)
+
+=================
+
+2025-04-04 12:24:31,088 [INFO] Training pipeline completed.
+2025-04-04 12:25:26,334 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14816.62 (± 820.97)
+🔍 Accuracy (R² Score - Cross Validation): 0.8800 (88%) (± 0.04)
+
+=================
+
+2025-04-04 12:25:26,360 [INFO] Training pipeline completed.
+2025-04-04 12:26:16,936 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14884.05 (± 824.69)
+🔍 Accuracy (R² Score - Cross Validation): 0.8792 (88%) (± 0.04)
+
+=================
+
+2025-04-04 12:26:16,961 [INFO] Training pipeline completed.
+2025-04-04 12:26:55,424 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14983.46 (± 823.86)
+🔍 Accuracy (R² Score - Cross Validation): 0.8782 (88%) (± 0.04)
+
+=================
+
+2025-04-04 12:26:55,444 [INFO] Training pipeline completed.
+2025-04-04 12:30:27,297 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 15015.14 (± 1010.54)
+🔍 Accuracy (R² Score - Cross Validation): 0.8802 (88%) (± 0.05)
+
+=================
+
+2025-04-04 12:30:27,323 [INFO] Training pipeline completed.
+2025-04-04 12:30:52,200 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14816.62 (± 820.97)
+🔍 Accuracy (R² Score - Cross Validation): 0.8800 (88%) (± 0.04)
+
+=================
+
+2025-04-04 12:30:52,223 [INFO] Training pipeline completed.
+2025-04-04 12:31:57,683 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14755.70 (± 748.64)
+🔍 Accuracy (R² Score - Cross Validation): 0.8776 (88%) (± 0.05)
+
+=================
+
+2025-04-04 12:31:57,709 [INFO] Training pipeline completed.
+2025-04-04 12:32:31,615 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14962.64 (± 882.55)
+🔍 Accuracy (R² Score - Cross Validation): 0.8804 (88%) (± 0.05)
+
+=================
+
+2025-04-04 12:32:31,642 [INFO] Training pipeline completed.
+2025-04-04 14:39:20,757 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14962.64 (± 882.55)
+🔍 Accuracy (R² Score - Cross Validation): 0.8804 (88%) (± 0.05)
+
+=================
+
+2025-04-04 14:39:20,778 [INFO] Training pipeline completed.
+2025-04-04 14:39:20,781 [INFO] Starting test process...
+2025-04-04 14:39:20,940 [RESULT] 
+
+===== RESULT =====
+✅ Predictions saved successfully! 📂 File path: \python_projects\machine_learning\house_price_prediction\src\results\predictions.csv
+=================
+
+2025-04-04 14:39:20,940 [INFO] Test process completed.
+2025-04-04 14:40:24,898 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14962.64 (± 882.55)
+🔍 Accuracy (R² Score - Cross Validation): 0.8804 (88%) (± 0.05)
+
+=================
+
+2025-04-04 14:40:24,925 [INFO] Training pipeline completed.
+2025-04-04 14:40:24,928 [INFO] Starting test process...
+2025-04-04 14:40:25,051 [RESULT] 
+
+===== RESULT =====
+✅ Predictions saved successfully! 📂 File path: \python_projects\machine_learning\house_price_prediction\src\results\predictions.csv
+=================
+
+2025-04-04 14:40:25,051 [INFO] Test process completed.
+2025-04-04 14:41:20,420 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14652.85 (± 812.75)
+🔍 Accuracy (R² Score - Cross Validation): 0.8816 (88%) (± 0.04)
+
+=================
+
+2025-04-04 14:41:20,442 [INFO] Training pipeline completed.
+2025-04-04 14:41:54,610 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14652.85 (± 812.75)
+🔍 Accuracy (R² Score - Cross Validation): 0.8816 (88%) (± 0.04)
+
+=================
+
+2025-04-04 14:41:54,642 [INFO] Training pipeline completed.
+2025-04-04 14:41:54,646 [INFO] Starting test process...
+2025-04-04 14:41:54,821 [RESULT] 
+
+===== RESULT =====
+✅ Predictions saved successfully! 📂 File path: \python_projects\machine_learning\house_price_prediction\src\results\predictions.csv
+=================
+
+2025-04-04 14:41:54,821 [INFO] Test process completed.
+2025-04-04 14:42:54,341 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14687.31 (± 691.85)
+🔍 Accuracy (R² Score - Cross Validation): 0.8870 (89%) (± 0.04)
+
+=================
+
+2025-04-04 14:42:54,371 [INFO] Training pipeline completed.
+2025-04-04 14:42:54,374 [INFO] Starting test process...
+2025-04-04 14:42:54,541 [RESULT] 
+
+===== RESULT =====
+✅ Predictions saved successfully! 📂 File path: \python_projects\machine_learning\house_price_prediction\src\results\predictions.csv
+=================
+
+2025-04-04 14:42:54,541 [INFO] Test process completed.
+2025-04-04 14:43:56,126 [INFO] Training the model...
+2025-04-04 14:43:56,955 [INFO] Model training completed.
+2025-04-04 14:43:56,956 [INFO] Performing cross-validation...
+2025-04-04 14:44:03,075 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14655.88 (± 688.59)
+🔍 Accuracy (R² Score - Cross Validation): 0.8829 (88%) (± 0.04)
+
+=================
+
+2025-04-04 14:44:03,076 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 14:44:03,092 [INFO] Model saved successfully.
+2025-04-04 14:44:03,092 [INFO] Training pipeline completed.
+2025-04-04 14:44:03,095 [INFO] Starting test process...
+2025-04-04 14:44:03,124 [INFO] Loading model from \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl...
+2025-04-04 14:44:03,146 [INFO] Model loaded successfully.
+2025-04-04 14:44:03,179 [INFO] Loading model from \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 14:44:03,232 [INFO] Model loaded successfully.
+2025-04-04 14:44:03,248 [RESULT] 
+
+===== RESULT =====
+✅ Predictions saved successfully! 📂 File path: \python_projects\machine_learning\house_price_prediction\src\results\predictions.csv
+=================
+
+2025-04-04 14:44:03,249 [INFO] Test process completed.
+2025-04-04 14:44:39,161 [INFO] Training the model...
+2025-04-04 14:44:40,275 [INFO] Model training completed.
+2025-04-04 14:44:40,275 [INFO] Performing cross-validation...
+2025-04-04 14:44:48,691 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14822.57 (± 819.43)
+🔍 Accuracy (R² Score - Cross Validation): 0.8855 (89%) (± 0.04)
+
+=================
+
+2025-04-04 14:44:48,692 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 14:44:48,712 [INFO] Model saved successfully.
+2025-04-04 14:44:48,712 [INFO] Training pipeline completed.
+2025-04-04 14:45:37,603 [INFO] Training the model...
+2025-04-04 14:45:38,379 [INFO] Model training completed.
+2025-04-04 14:45:38,380 [INFO] Performing cross-validation...
+2025-04-04 14:45:43,862 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14669.45 (± 669.91)
+🔍 Accuracy (R² Score - Cross Validation): 0.8871 (89%) (± 0.04)
+
+=================
+
+2025-04-04 14:45:43,863 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 14:45:43,878 [INFO] Model saved successfully.
+2025-04-04 14:45:43,878 [INFO] Training pipeline completed.
+2025-04-04 14:46:30,146 [INFO] Training the model...
+2025-04-04 14:46:30,998 [INFO] Model training completed.
+2025-04-04 14:46:30,998 [INFO] Performing cross-validation...
+2025-04-04 14:46:36,896 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 15050.27 (± 1003.99)
+🔍 Accuracy (R² Score - Cross Validation): 0.8837 (88%) (± 0.04)
+
+=================
+
+2025-04-04 14:46:36,897 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 14:46:36,911 [INFO] Model saved successfully.
+2025-04-04 14:46:36,912 [INFO] Training pipeline completed.
+2025-04-04 14:47:28,022 [INFO] Training the model...
+2025-04-04 14:47:29,675 [INFO] Model training completed.
+2025-04-04 14:47:29,676 [INFO] Performing cross-validation...
+2025-04-04 14:47:41,468 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14854.97 (± 979.52)
+🔍 Accuracy (R² Score - Cross Validation): 0.8784 (88%) (± 0.05)
+
+=================
+
+2025-04-04 14:47:41,469 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 14:47:41,493 [INFO] Model saved successfully.
+2025-04-04 14:47:41,493 [INFO] Training pipeline completed.
+2025-04-04 14:47:59,576 [INFO] Training the model...
+2025-04-04 14:48:00,861 [INFO] Model training completed.
+2025-04-04 14:48:00,861 [INFO] Performing cross-validation...
+2025-04-04 14:48:10,093 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14863.48 (± 1009.65)
+🔍 Accuracy (R² Score - Cross Validation): 0.8782 (88%) (± 0.05)
+
+=================
+
+2025-04-04 14:48:10,093 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 14:48:10,116 [INFO] Model saved successfully.
+2025-04-04 14:48:10,116 [INFO] Training pipeline completed.
+2025-04-04 14:48:41,795 [INFO] Training the model...
+2025-04-04 14:48:44,031 [INFO] Model training completed.
+2025-04-04 14:48:44,031 [INFO] Performing cross-validation...
+2025-04-04 14:48:55,735 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14854.97 (± 979.52)
+🔍 Accuracy (R² Score - Cross Validation): 0.8784 (88%) (± 0.05)
+
+=================
+
+2025-04-04 14:48:55,736 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 14:48:55,762 [INFO] Model saved successfully.
+2025-04-04 14:48:55,763 [INFO] Training pipeline completed.
+2025-04-04 14:52:55,004 [INFO] Training the model...
+2025-04-04 14:52:56,453 [INFO] Model training completed.
+2025-04-04 14:52:56,454 [INFO] Performing cross-validation...
+2025-04-04 14:53:08,754 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 15091.95 (± 1002.31)
+🔍 Accuracy (R² Score - Cross Validation): 0.8839 (88%) (± 0.04)
+
+=================
+
+2025-04-04 14:53:08,755 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 14:53:08,783 [INFO] Model saved successfully.
+2025-04-04 14:53:08,783 [INFO] Training pipeline completed.
+2025-04-04 14:53:14,589 [INFO] Training the model...
+2025-04-04 14:53:16,498 [INFO] Model training completed.
+2025-04-04 14:53:16,498 [INFO] Performing cross-validation...
+2025-04-04 14:53:32,645 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 15088.96 (± 999.09)
+🔍 Accuracy (R² Score - Cross Validation): 0.8758 (88%) (± 0.04)
+
+=================
+
+2025-04-04 14:53:32,646 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 14:53:32,673 [INFO] Model saved successfully.
+2025-04-04 14:53:32,673 [INFO] Training pipeline completed.
+2025-04-04 14:54:24,469 [INFO] Training the model...
+2025-04-04 14:54:26,615 [INFO] Model training completed.
+2025-04-04 14:54:26,615 [INFO] Performing cross-validation...
+2025-04-04 14:54:43,073 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 15007.62 (± 764.30)
+🔍 Accuracy (R² Score - Cross Validation): 0.8819 (88%) (± 0.04)
+
+=================
+
+2025-04-04 14:54:43,074 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 14:54:43,106 [INFO] Model saved successfully.
+2025-04-04 14:54:43,107 [INFO] Training pipeline completed.
+2025-04-04 14:54:47,595 [INFO] Training the model...
+2025-04-04 14:54:50,246 [INFO] Model training completed.
+2025-04-04 14:54:50,247 [INFO] Performing cross-validation...
+2025-04-04 14:55:12,396 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 15164.95 (± 786.21)
+🔍 Accuracy (R² Score - Cross Validation): 0.8777 (88%) (± 0.04)
+
+=================
+
+2025-04-04 14:55:12,397 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 14:55:12,434 [INFO] Model saved successfully.
+2025-04-04 14:55:12,435 [INFO] Training pipeline completed.
+2025-04-04 14:55:35,095 [INFO] Training the model...
+2025-04-04 14:55:36,959 [INFO] Model training completed.
+2025-04-04 14:55:36,960 [INFO] Performing cross-validation...
+2025-04-04 14:55:50,580 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 15091.95 (± 1002.31)
+🔍 Accuracy (R² Score - Cross Validation): 0.8839 (88%) (± 0.04)
+
+=================
+
+2025-04-04 14:55:50,580 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 14:55:50,607 [INFO] Model saved successfully.
+2025-04-04 14:55:50,607 [INFO] Training pipeline completed.
+2025-04-04 14:56:08,129 [INFO] Training the model...
+2025-04-04 14:56:09,689 [INFO] Model training completed.
+2025-04-04 14:56:09,690 [INFO] Performing cross-validation...
+2025-04-04 14:56:20,339 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 15087.83 (± 1009.02)
+🔍 Accuracy (R² Score - Cross Validation): 0.8838 (88%) (± 0.04)
+
+=================
+
+2025-04-04 14:56:20,340 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 14:56:20,364 [INFO] Model saved successfully.
+2025-04-04 14:56:20,365 [INFO] Training pipeline completed.
+2025-04-04 14:56:37,211 [INFO] Training the model...
+2025-04-04 14:56:38,680 [INFO] Model training completed.
+2025-04-04 14:56:38,681 [INFO] Performing cross-validation...
+2025-04-04 14:56:49,951 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 15716.79 (± 933.08)
+🔍 Accuracy (R² Score - Cross Validation): 0.8694 (87%) (± 0.06)
+
+=================
+
+2025-04-04 14:56:49,951 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 14:56:49,972 [INFO] Model saved successfully.
+2025-04-04 14:56:49,972 [INFO] Training pipeline completed.
+2025-04-04 14:57:07,439 [INFO] Training the model...
+2025-04-04 14:57:09,371 [INFO] Model training completed.
+2025-04-04 14:57:09,372 [INFO] Performing cross-validation...
+2025-04-04 14:57:23,001 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 15716.33 (± 935.64)
+🔍 Accuracy (R² Score - Cross Validation): 0.8694 (87%) (± 0.06)
+
+=================
+
+2025-04-04 14:57:23,001 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 14:57:23,030 [INFO] Model saved successfully.
+2025-04-04 14:57:23,030 [INFO] Training pipeline completed.
+2025-04-04 14:57:40,376 [INFO] Training the model...
+2025-04-04 14:57:42,546 [INFO] Model training completed.
+2025-04-04 14:57:42,546 [INFO] Performing cross-validation...
+2025-04-04 14:57:56,394 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 21641.40 (± 784.99)
+🔍 Accuracy (R² Score - Cross Validation): 0.8101 (81%) (± 0.03)
+
+=================
+
+2025-04-04 14:57:56,394 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 14:57:56,418 [INFO] Model saved successfully.
+2025-04-04 14:57:56,418 [INFO] Training pipeline completed.
+2025-04-04 14:58:14,421 [INFO] Training the model...
+2025-04-04 14:58:16,051 [INFO] Model training completed.
+2025-04-04 14:58:16,051 [INFO] Performing cross-validation...
+2025-04-04 14:58:27,943 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 15091.20 (± 1010.72)
+🔍 Accuracy (R² Score - Cross Validation): 0.8839 (88%) (± 0.04)
+
+=================
+
+2025-04-04 14:58:27,944 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 14:58:27,972 [INFO] Model saved successfully.
+2025-04-04 14:58:27,972 [INFO] Training pipeline completed.
+2025-04-04 15:05:53,984 [INFO] Training the model...
+2025-04-04 15:05:56,073 [INFO] Model training completed.
+2025-04-04 15:05:56,073 [INFO] Performing cross-validation...
+2025-04-04 15:06:09,679 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14755.34 (± 952.55)
+🔍 Accuracy (R² Score - Cross Validation): 0.8841 (88%) (± 0.04)
+
+=================
+
+2025-04-04 15:06:09,680 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 15:06:09,713 [INFO] Model saved successfully.
+2025-04-04 15:06:09,714 [INFO] Training pipeline completed.
+2025-04-04 15:09:09,973 [INFO] Training the model with hyperparameter tuning...
+2025-04-04 15:14:13,116 [INFO] Best hyperparameters found: {'colsample_bytree': 0.3, 'learning_rate': 0.03, 'max_depth': 4, 'n_estimators': 1000, 'subsample': 0.6}
+2025-04-04 15:14:39,629 [INFO] Training the model with hyperparameter tuning...
+2025-04-04 15:20:03,606 [INFO] Best hyperparameters found: {'colsample_bytree': 0.3, 'learning_rate': 0.03, 'max_depth': 4, 'n_estimators': 1000, 'subsample': 0.6}
+2025-04-04 15:20:04,456 [INFO] Model training with best hyperparameters completed.
+2025-04-04 15:20:04,458 [INFO] Performing cross-validation...
+2025-04-04 15:20:19,755 [INFO] Training the model with hyperparameter tuning...
+2025-04-04 15:26:03,798 [INFO] Best hyperparameters found: {'colsample_bytree': 0.3, 'learning_rate': 0.03, 'max_depth': 4, 'n_estimators': 1000, 'subsample': 0.6}
+2025-04-04 15:26:05,237 [INFO] Model training with best hyperparameters completed.
+2025-04-04 15:26:05,238 [INFO] Performing cross-validation...
+2025-04-04 15:26:14,158 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14411.90 (± 729.96)
+🔍 Accuracy (R² Score - Cross Validation): 0.8858 (89%) (± 0.04)
+
+=================
+
+2025-04-04 15:26:14,159 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 15:26:14,185 [INFO] Model saved successfully.
+2025-04-04 15:26:14,185 [INFO] Training pipeline completed.
+2025-04-04 15:30:38,640 [INFO] Starting test process...
+2025-04-04 15:30:38,664 [INFO] Loading model from \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl...
+2025-04-04 15:30:38,677 [INFO] Model loaded successfully.
+2025-04-04 15:30:38,709 [INFO] Loading model from \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 15:30:38,781 [INFO] Model loaded successfully.
+2025-04-04 15:30:38,800 [RESULT] 
+
+===== RESULT =====
+✅ Predictions saved successfully! 📂 File path: \python_projects\machine_learning\house_price_prediction\src\results\predictions.csv
+=================
+
+2025-04-04 15:30:38,800 [INFO] Test process completed.
+2025-04-04 15:32:24,081 [INFO] Training the model with hyperparameter tuning...
+2025-04-04 15:40:28,032 [INFO] Best hyperparameters found: {'colsample_bytree': 0.4, 'learning_rate': 0.03, 'max_depth': 4, 'n_estimators': 800, 'subsample': 0.55}
+2025-04-04 15:40:29,197 [INFO] Model training with best hyperparameters completed.
+2025-04-04 15:40:29,198 [INFO] Performing cross-validation...
+2025-04-04 15:40:36,763 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14629.98 (± 911.56)
+🔍 Accuracy (R² Score - Cross Validation): 0.8877 (89%) (± 0.04)
+
+=================
+
+2025-04-04 15:40:36,764 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 15:40:36,784 [INFO] Model saved successfully.
+2025-04-04 15:40:36,785 [INFO] Training pipeline completed.
+2025-04-04 15:40:36,789 [INFO] Starting test process...
+2025-04-04 15:40:36,827 [INFO] Loading model from \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl...
+2025-04-04 15:40:36,846 [INFO] Model loaded successfully.
+2025-04-04 15:40:36,880 [INFO] Loading model from \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 15:40:36,950 [INFO] Model loaded successfully.
+2025-04-04 15:40:36,965 [RESULT] 
+
+===== RESULT =====
+✅ Predictions saved successfully! 📂 File path: \python_projects\machine_learning\house_price_prediction\src\results\predictions.csv
+=================
+
+2025-04-04 15:40:36,965 [INFO] Test process completed.
+2025-04-04 15:42:23,940 [INFO] Training the model...
+2025-04-04 15:42:25,020 [INFO] Model training completed.
+2025-04-04 15:42:25,020 [INFO] Performing cross-validation...
+2025-04-04 15:42:32,110 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14377.19 (± 734.86)
+🔍 Accuracy (R² Score - Cross Validation): 0.8878 (89%) (± 0.04)
+
+=================
+
+2025-04-04 15:42:32,111 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 15:42:32,128 [INFO] Model saved successfully.
+2025-04-04 15:42:32,128 [INFO] Training pipeline completed.
+2025-04-04 15:43:15,895 [INFO] Training the model...
+2025-04-04 15:43:16,990 [INFO] Model training completed.
+2025-04-04 15:43:16,990 [INFO] Performing cross-validation...
+2025-04-04 15:43:24,319 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14676.97 (± 793.84)
+🔍 Accuracy (R² Score - Cross Validation): 0.8849 (88%) (± 0.04)
+
+=================
+
+2025-04-04 15:43:24,320 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 15:43:24,338 [INFO] Model saved successfully.
+2025-04-04 15:43:24,338 [INFO] Training pipeline completed.
+2025-04-04 15:45:08,650 [INFO] Training the model...
+2025-04-04 15:45:09,695 [INFO] Model training completed.
+2025-04-04 15:45:09,695 [INFO] Performing cross-validation...
+2025-04-04 15:45:16,771 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14377.19 (± 734.86)
+🔍 Accuracy (R² Score - Cross Validation): 0.8878 (89%) (± 0.04)
+
+=================
+
+2025-04-04 15:45:16,771 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 15:45:16,792 [INFO] Model saved successfully.
+2025-04-04 15:45:16,792 [INFO] Training pipeline completed.
+2025-04-04 15:47:33,859 [INFO] Training the model with hyperparameter tuning...
+2025-04-04 16:22:10,275 [INFO] Training the model with hyperparameter tuning...
+2025-04-04 16:22:48,525 [INFO] Training the model with hyperparameter tuning...
+2025-04-04 16:32:25,980 [INFO] Best hyperparameters found: {'colsample_bytree': 0.3, 'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 1000, 'subsample': 0.6}
+2025-04-04 16:40:48,024 [INFO] Training the model with hyperparameter tuning...
+2025-04-04 16:50:11,877 [INFO] Best hyperparameters found: {'colsample_bytree': 0.3, 'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 1000, 'subsample': 0.6}
+2025-04-04 16:50:12,964 [INFO] Model training with best hyperparameters completed.
+2025-04-04 16:50:12,965 [INFO] Performing cross-validation...
+2025-04-04 16:50:19,520 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14451.93 (± 725.33)
+🔍 Accuracy (R² Score - Cross Validation): 0.8907 (89%) (± 0.04)
+
+=================
+
+2025-04-04 16:50:19,520 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 16:50:19,540 [INFO] Model saved successfully.
+2025-04-04 16:50:19,541 [INFO] Training pipeline completed.
+2025-04-04 17:06:29,134 [INFO] Starting test process...
+2025-04-04 17:06:29,159 [INFO] Loading model from \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl...
+2025-04-04 17:06:29,172 [INFO] Model loaded successfully.
+2025-04-04 17:06:29,193 [INFO] Loading model from \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 17:06:29,250 [INFO] Model loaded successfully.
+2025-04-04 17:06:29,262 [RESULT] 
+
+===== RESULT =====
+✅ Predictions saved successfully! 📂 File path: \python_projects\machine_learning\house_price_prediction\src\results\predictions.csv
+=================
+
+2025-04-04 17:06:29,262 [INFO] Test process completed.
+2025-04-04 17:08:00,326 [INFO] Starting test process...
+2025-04-04 17:08:00,348 [INFO] Loading model from \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl...
+2025-04-04 17:08:00,351 [INFO] Model loaded successfully.
+2025-04-04 17:08:00,375 [INFO] Loading model from \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 17:08:00,396 [INFO] Model loaded successfully.
+2025-04-04 17:08:00,408 [RESULT] 
+
+===== RESULT =====
+✅ Predictions saved successfully! 📂 File path: \python_projects\machine_learning\house_price_prediction\src\results\predictions.csv
+=================
+
+2025-04-04 17:08:00,408 [INFO] Test process completed.
+2025-04-04 17:08:03,583 [INFO] Training the model...
+2025-04-04 17:08:04,254 [INFO] Model training completed.
+2025-04-04 17:08:04,255 [INFO] Performing cross-validation...
+2025-04-04 17:08:09,266 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14775.43 (± 859.62)
+🔍 Accuracy (R² Score - Cross Validation): 0.8844 (88%) (± 0.04)
+
+=================
+
+2025-04-04 17:08:09,266 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 17:08:09,278 [INFO] Model saved successfully.
+2025-04-04 17:08:09,278 [INFO] Training pipeline completed.
+2025-04-04 17:08:38,847 [INFO] Loading data from \python_projects\machine_learning\house_price_prediction\src\datasets\train\train_house_prices.csv...
+2025-04-04 17:08:38,862 [INFO] Data loaded successfully. Shape: (1460, 80)
+2025-04-04 17:08:38,863 [INFO] Applying feature engineering...
+2025-04-04 17:08:38,866 [INFO] Feature engineering applied successfully.
+2025-04-04 17:08:38,866 [INFO] Splitting data into training and validation sets...
+2025-04-04 17:08:38,870 [INFO] Data split completed. Training size: (1168, 82), Validation size: (292, 82)
+2025-04-04 17:08:38,871 [INFO] Preprocessing data...
+2025-04-04 17:08:38,913 [INFO] Data preprocessing completed. Preprocessor saved to \python_projects\machine_learning\house_price_prediction\src\models\preprocessor.pkl.
+2025-04-04 17:08:38,913 [INFO] Training the model...
+2025-04-04 17:08:39,672 [INFO] Model training completed.
+2025-04-04 17:08:39,672 [INFO] Performing cross-validation...
+2025-04-04 17:08:44,779 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14669.45 (± 669.91)
+🔍 Accuracy (R² Score - Cross Validation): 0.8871 (89%) (± 0.04)
+
+=================
+
+2025-04-04 17:08:44,779 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 17:08:44,792 [INFO] Model saved successfully.
+2025-04-04 17:08:44,792 [INFO] Training pipeline completed.
+2025-04-04 17:09:36,434 [INFO] Training the model...
+2025-04-04 17:09:37,315 [INFO] Model training completed.
+2025-04-04 17:09:37,315 [INFO] Performing cross-validation...
+2025-04-04 17:09:43,617 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14775.43 (± 859.62)
+🔍 Accuracy (R² Score - Cross Validation): 0.8844 (88%) (± 0.04)
+
+=================
+
+2025-04-04 17:09:43,618 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 17:09:43,631 [INFO] Model saved successfully.
+2025-04-04 17:09:43,631 [INFO] Training pipeline completed.
+2025-04-04 17:11:02,879 [INFO] Training the model...
+2025-04-04 17:11:03,527 [INFO] Model training completed.
+2025-04-04 17:11:03,527 [INFO] Performing cross-validation...
+2025-04-04 17:11:08,003 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14868.78 (± 683.46)
+🔍 Accuracy (R² Score - Cross Validation): 0.8780 (88%) (± 0.04)
+
+=================
+
+2025-04-04 17:11:08,003 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 17:11:08,015 [INFO] Model saved successfully.
+2025-04-04 17:11:08,016 [INFO] Training pipeline completed.
+2025-04-04 17:11:18,426 [INFO] Training the model...
+2025-04-04 17:11:19,249 [INFO] Model training completed.
+2025-04-04 17:11:19,249 [INFO] Performing cross-validation...
+2025-04-04 17:11:25,356 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14775.43 (± 859.62)
+🔍 Accuracy (R² Score - Cross Validation): 0.8844 (88%) (± 0.04)
+
+=================
+
+2025-04-04 17:11:25,357 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-04 17:11:25,372 [INFO] Model saved successfully.
+2025-04-04 17:11:25,372 [INFO] Training pipeline completed.
+2025-04-05 19:27:12,585 [INFO] Training the model...
+2025-04-05 19:27:13,668 [INFO] Model training completed.
+2025-04-05 19:27:13,668 [INFO] Performing cross-validation...
+2025-04-05 19:27:21,587 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14775.43 (± 859.62)
+🔍 Accuracy (R² Score - Cross Validation): 0.8844 (88%) (± 0.04)
+
+=================
+
+2025-04-05 19:27:21,588 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-05 19:27:21,608 [INFO] Model saved successfully.
+2025-04-05 19:27:21,608 [INFO] Training pipeline completed.
+2025-04-05 19:27:39,941 [INFO] Training the model...
+2025-04-05 19:27:41,020 [INFO] Model training completed.
+2025-04-05 19:27:41,020 [INFO] Performing cross-validation...
+2025-04-05 19:27:48,766 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14775.43 (± 859.62)
+🔍 Accuracy (R² Score - Cross Validation): 0.8844 (88%) (± 0.04)
+
+=================
+
+2025-04-05 19:27:48,766 [INFO] Saving model to \python_projects\machine_learning\house_price_prediction\src\models\trained_model.pkl...
+2025-04-05 19:27:48,785 [INFO] Model saved successfully.
+2025-04-05 19:27:48,785 [INFO] Training pipeline completed.
+2025-04-05 19:28:18,391 [INFO] Training pipeline completed.
+2025-04-05 19:28:38,467 [INFO] Training pipeline completed.
+2025-04-05 19:29:13,094 [INFO] Training pipeline completed.
+2025-04-05 19:32:22,292 [INFO] Training pipeline completed.
+2025-04-05 19:42:25,873 [INFO] Training pipeline completed.
+2025-04-05 19:43:18,027 [INFO] Training pipeline completed.
+2025-04-05 19:43:37,552 [INFO] Training pipeline completed.
+2025-04-05 19:43:43,303 [INFO] Training pipeline completed.
+2025-04-05 19:43:57,057 [INFO] Training pipeline completed.
+2025-04-05 19:45:47,851 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14914.62 (± 759.75)
+🔍 Accuracy (R² Score - Cross Validation): 0.8853 (89%) (± 0.04)
+
+=================
+
+2025-04-05 19:45:47,869 [INFO] Training pipeline completed.
+2025-04-05 19:46:21,636 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14921.46 (± 928.01)
+🔍 Accuracy (R² Score - Cross Validation): 0.8810 (88%) (± 0.05)
+
+=================
+
+2025-04-05 19:46:21,652 [INFO] Training pipeline completed.
+2025-04-05 19:46:52,939 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 15234.49 (± 659.65)
+🔍 Accuracy (R² Score - Cross Validation): 0.8737 (87%) (± 0.05)
+
+=================
+
+2025-04-05 19:46:52,954 [INFO] Training pipeline completed.
+2025-04-05 19:47:30,366 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14925.01 (± 913.51)
+🔍 Accuracy (R² Score - Cross Validation): 0.8778 (88%) (± 0.05)
+
+=================
+
+2025-04-05 19:47:30,385 [INFO] Training pipeline completed.
+2025-04-05 19:47:56,515 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 15182.34 (± 801.55)
+🔍 Accuracy (R² Score - Cross Validation): 0.8723 (87%) (± 0.05)
+
+=================
+
+2025-04-05 19:47:56,532 [INFO] Training pipeline completed.
+2025-04-05 19:48:20,239 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14870.64 (± 850.28)
+🔍 Accuracy (R² Score - Cross Validation): 0.8817 (88%) (± 0.04)
+
+=================
+
+2025-04-05 19:48:20,259 [INFO] Training pipeline completed.
+2025-04-05 19:49:02,653 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14597.53 (± 840.67)
+🔍 Accuracy (R² Score - Cross Validation): 0.8885 (89%) (± 0.04)
+
+=================
+
+2025-04-05 19:49:02,689 [INFO] Training pipeline completed.
+2025-04-05 19:49:38,576 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14975.29 (± 619.36)
+🔍 Accuracy (R² Score - Cross Validation): 0.8809 (88%) (± 0.04)
+
+=================
+
+2025-04-05 19:49:38,613 [INFO] Training pipeline completed.
+2025-04-05 19:50:07,706 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14778.94 (± 677.22)
+🔍 Accuracy (R² Score - Cross Validation): 0.8865 (89%) (± 0.04)
+
+=================
+
+2025-04-05 19:50:07,745 [INFO] Training pipeline completed.
+2025-04-05 19:50:32,846 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14885.67 (± 674.71)
+🔍 Accuracy (R² Score - Cross Validation): 0.8782 (88%) (± 0.04)
+
+=================
+
+2025-04-05 19:50:32,878 [INFO] Training pipeline completed.
+2025-04-05 19:51:00,290 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14872.91 (± 651.59)
+🔍 Accuracy (R² Score - Cross Validation): 0.8821 (88%) (± 0.04)
+
+=================
+
+2025-04-05 19:51:00,328 [INFO] Training pipeline completed.
+2025-04-05 19:53:43,083 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 15449.87 (± 742.11)
+🔍 Accuracy (R² Score - Cross Validation): 0.8747 (87%) (± 0.03)
+
+=================
+
+2025-04-05 19:53:43,118 [INFO] Training pipeline completed.
+2025-04-05 19:54:18,472 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 15637.85 (± 666.51)
+🔍 Accuracy (R² Score - Cross Validation): 0.8718 (87%) (± 0.04)
+
+=================
+
+2025-04-05 19:54:18,507 [INFO] Training pipeline completed.
+2025-04-05 19:54:57,000 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14837.74 (± 581.34)
+🔍 Accuracy (R² Score - Cross Validation): 0.8797 (88%) (± 0.04)
+
+=================
+
+2025-04-05 19:54:57,035 [INFO] Training pipeline completed.
+2025-04-05 19:55:28,705 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14718.77 (± 688.93)
+🔍 Accuracy (R² Score - Cross Validation): 0.8812 (88%) (± 0.04)
+
+=================
+
+2025-04-05 19:55:28,738 [INFO] Training pipeline completed.
+2025-04-05 19:56:01,884 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14607.53 (± 814.11)
+🔍 Accuracy (R² Score - Cross Validation): 0.8865 (89%) (± 0.04)
+
+=================
+
+2025-04-05 19:56:01,910 [INFO] Training pipeline completed.
+2025-04-05 19:56:25,110 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14590.51 (± 715.32)
+🔍 Accuracy (R² Score - Cross Validation): 0.8866 (89%) (± 0.04)
+
+=================
+
+2025-04-05 19:56:25,138 [INFO] Training pipeline completed.
+2025-04-05 19:56:53,854 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14622.21 (± 663.37)
+🔍 Accuracy (R² Score - Cross Validation): 0.8840 (88%) (± 0.04)
+
+=================
+
+2025-04-05 19:56:53,885 [INFO] Training pipeline completed.
+2025-04-05 19:57:18,597 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14838.74 (± 629.15)
+🔍 Accuracy (R² Score - Cross Validation): 0.8841 (88%) (± 0.04)
+
+=================
+
+2025-04-05 19:57:18,626 [INFO] Training pipeline completed.
+2025-04-05 19:57:41,876 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14628.92 (± 785.24)
+🔍 Accuracy (R² Score - Cross Validation): 0.8847 (88%) (± 0.05)
+
+=================
+
+2025-04-05 19:57:41,908 [INFO] Training pipeline completed.
+2025-04-05 19:58:07,637 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14672.78 (± 775.14)
+🔍 Accuracy (R² Score - Cross Validation): 0.8847 (88%) (± 0.05)
+
+=================
+
+2025-04-05 19:58:07,664 [INFO] Training pipeline completed.
+2025-04-05 19:58:40,759 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14642.97 (± 697.82)
+🔍 Accuracy (R² Score - Cross Validation): 0.8851 (89%) (± 0.04)
+
+=================
+
+2025-04-05 19:58:40,783 [INFO] Training pipeline completed.
+2025-04-05 19:59:10,447 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14826.96 (± 870.55)
+🔍 Accuracy (R² Score - Cross Validation): 0.8810 (88%) (± 0.05)
+
+=================
+
+2025-04-05 19:59:10,477 [INFO] Training pipeline completed.
+2025-04-05 20:00:43,154 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14981.26 (± 859.70)
+🔍 Accuracy (R² Score - Cross Validation): 0.8827 (88%) (± 0.04)
+
+=================
+
+2025-04-05 20:00:43,177 [INFO] Training pipeline completed.
+2025-04-05 20:01:17,043 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14883.00 (± 715.26)
+🔍 Accuracy (R² Score - Cross Validation): 0.8849 (88%) (± 0.04)
+
+=================
+
+2025-04-05 20:01:17,083 [INFO] Training pipeline completed.
+2025-04-05 20:01:58,050 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 15224.83 (± 432.08)
+🔍 Accuracy (R² Score - Cross Validation): 0.8803 (88%) (± 0.04)
+
+=================
+
+2025-04-05 20:01:58,089 [INFO] Training pipeline completed.
+2025-04-05 20:02:40,473 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 15051.93 (± 543.79)
+🔍 Accuracy (R² Score - Cross Validation): 0.8806 (88%) (± 0.04)
+
+=================
+
+2025-04-05 20:02:40,515 [INFO] Training pipeline completed.
+2025-04-05 20:08:19,281 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14423.97 (± 645.32)
+🔍 Accuracy (R² Score - Cross Validation): 0.8897 (89%) (± 0.04)
+
+=================
+
+2025-04-05 20:08:19,305 [INFO] Training pipeline completed.
+2025-04-05 20:10:37,823 [RESULT] 
+
+===== RESULT =====
+✅ Cross-validation completed.
+📊 MAE (Cross-Validation): 14423.97 (± 645.32)
+🔍 Accuracy (R² Score - Cross Validation): 0.8897 (89%) (± 0.04)
+
+=================
+
+2025-04-05 20:10:37,845 [INFO] Training pipeline completed.
